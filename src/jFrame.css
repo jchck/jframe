@@ -1,0 +1,14 @@
+@import 'normalize.css/normalize.css';
+
+@import '_variables';
+
+.menu {
+  width: 100%;
+    a {
+        text-decoration: none;
+    }
+}
+
+.flex{
+	display: flex;
+}

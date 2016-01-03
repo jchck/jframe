@@ -6,14 +6,15 @@ var gulp 			= require('gulp'),
 	autoprefixer	= require('autoprefixer'),
 	atImport		= require('postcss-import'),
 	mqpacker 		= require('css-mqpacker'),
-	cssnano 		= require('cssnano');
+	cssnano 		= require('cssnano'),
+	size			= require('gulp-size')
 
 
 // This is the Gulp task named 'css' which executes the following function
 gulp.task('css', function(){
 	
 	// Define PostCSS plugins here, we'll pass them below
-	var processors = [
+	var postcssPlugins = [
 		atImport,
 		autoprefixer({
 			browsers: ['last 2 versions']
@@ -24,10 +25,13 @@ gulp.task('css', function(){
 		precss
 	];
 
-	// This is where the files for processing are located (/.src/*.css)
-	return gulp.src('./src/*.css')
+	// This is where the files for processing are located (/.src/jFrame.css)
+	return gulp.src('./src/jFrame.css')
 		// PostCSS plugins (defined above) are added to the pipe here
-		.pipe(postcss(processors))
+		.pipe(postcss(postcssPlugins))
+		// Print processed file size to terminal
+		.pipe(size({gzip: false, showFiles: true, title:'Processed!'}))
+		.pipe(size({gzip: true, showFiles: true, title:'Processed & gZipped!'}))
 		// This is where the processed files get piped to ('./dest')
 		.pipe(gulp.dest('./dest'));
 });
