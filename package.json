@@ -1,0 +1,19 @@
+{
+  "name": "jframe",
+  "version": "0.0.0",
+  "description": "A css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "author": "jchck <hey@justinchick.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1"
+  }
+}
