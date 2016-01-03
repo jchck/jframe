@@ -3,15 +3,7 @@ var gulp 			= require('gulp'),
 	postcss			= require('gulp-postcss'),
 	cssnext			= require('cssnext'),
 	precss			= require('precss'),
-
-	// These are PostCSS plugins
-	autoprefixer	= require('autoprefixer'),
-	colors			= require('postcss-color-rgba-fallback'),
-	opacity 		= require('postcss-opacity'),
-	pseudoelements 	= require('postcss-pseudoelements'),
-	vmin 			= require('postcss-vmin'),
-	pixrem 			= require('pixrem'),
-	change 			= require('postcss-will-change');
+	autoprefixer	= require('autoprefixer');
 
 // This is the Gulp task named 'css' which executes the following function
 gulp.task('css', function(){
@@ -21,14 +13,8 @@ gulp.task('css', function(){
 		autoprefixer({
 			browsers: ['last 2 versions']
 		}),
-		change,
-		colors,
-		opacity,
-		pseudoelements,
 		cssnext,
-		precss,
-		vmin,
-		pixrem
+		precss
 	];
 
 	// This is where the files for processing are located (/.src/*.css)
