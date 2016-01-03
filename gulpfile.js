@@ -1,9 +1,17 @@
 // Define variables to load in jFrame's Gulpfile
 var gulp 			= require('gulp'),
-	postcss			= require('gulp-postcss')
-	autoprefixer	= require('autoprefixer')
-	cssnext			= require('cssnext')
-	precss			= require('precss');
+	postcss			= require('gulp-postcss'),
+	cssnext			= require('cssnext'),
+	precss			= require('precss'),
+
+	// These are PostCSS plugins
+	autoprefixer	= require('autoprefixer'),
+	colors			= require('postcss-color-rgba-fallback'),
+	opacity 		= require('postcss-opacity'),
+	pseudoelements 	= require('postcss-pseudoelements'),
+	vmin 			= require('postcss-vmin'),
+	pixrem 			= require('pixrem'),
+	change 			= require('postcss-will-change');
 
 // This is the Gulp task named 'css' which executes the following function
 gulp.task('css', function(){
@@ -13,8 +21,14 @@ gulp.task('css', function(){
 		autoprefixer({
 			browsers: ['last 2 versions']
 		}),
+		change,
+		colors,
+		opacity,
+		pseudoelements,
 		cssnext,
-		precss
+		precss,
+		vmin,
+		pixrem
 	];
 
 	// This is where the files for processing are located (/.src/*.css)
