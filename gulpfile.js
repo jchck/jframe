@@ -10,7 +10,9 @@ gulp.task('css', function(){
 	
 	// Define PostCSS plugins here, we'll pass them below
 	var processors = [
-		autoprefixer,
+		autoprefixer({
+			browsers: ['last 2 versions']
+		}),
 		cssnext,
 		precss
 	];
