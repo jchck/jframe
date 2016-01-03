@@ -3,6 +3,20 @@
 .autoprefixer {
   display: flex;
 }
+
+@keyframes animationExample {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+ 
+.animateThis {
+    animation: animationExample 2s;
+    display: flex;
+}
  
 /* Testing cssnext */
  
@@ -19,4 +33,35 @@
   @else {
     background: blue;
   }
+}
+
+/* Testing WIllchange */
+.thisWillChange {
+    will-change: transform;
+}
+
+.rgbaFallback {
+    background: rgba(0,0,0,0.5);
+}
+
+.opacityFallback {
+    opacity: 0.5;
+}
+
+.pseudo-element::before {
+    content: '';
+}
+
+.vmFallback {
+    width: 50vmin;
+}
+
+.remFallback {
+    height: 10rem;
+    font: 2rem Arial;
+}
+ 
+.remFallback::before {
+    content: '';
+    line-height: 1rem;
 }
