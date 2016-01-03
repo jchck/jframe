@@ -50,7 +50,7 @@ gulp.task('browser-sync', function(){
 
 // Call for reloading browsers
 gulp.task('bs-reload', function(){
-	 browserSync.reload();
+	 browserSync.reload;
 });
 
 /**
