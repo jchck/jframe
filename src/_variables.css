@@ -1,0 +1,18 @@
+:root {
+  --font-family: "Helvetica Neue", Helvetica, sans-serif;
+  --line-height: 1.5;
+  --body-font-size: 100%;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --heading-margin-top: 1em;
+  --heading-margin-bottom: .5em;
+  --paragraph-margin-top: 0;
+  --paragraph-margin-bottom: var(--space-2);
+  --list-margin-top: 0;
+  --list-margin-bottom: var(--space-2);
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --pre-font-size: inherit;
+  --pre-margin-top: 0;
+  --pre-margin-bottom: var(--space-2);
+}
