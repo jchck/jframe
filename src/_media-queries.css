@@ -1,0 +1,42 @@
+/*
+	Update these media queries to match your content, not the other way around
+
+	Since thease are all written in the min-width format, media queries will
+	remain true until they are defined otherwise
+
+	Use media queries like the example below anywhere in your project
+	They'll be combined during the build process
+
+	body{
+		background: pink;
+	}
+
+	@media (--screen-xs){
+		body{
+			background: red;
+		}
+	}
+
+	 @media (--screen-sm){
+	 	body{
+	 		background: orange;
+	 	}
+	 }
+
+	 @media (--screen-md){
+	 	body{
+	 		background: blue;
+	 	}
+	 }
+
+	 @media (--screen-lg){
+	 	body{
+	 		background: green;
+	 	}
+	 }
+ */
+
+@custom-media --screen-xs (min-width: 30em);
+@custom-media --screen-sm (min-width: 60em);
+@custom-media --screen-md (min-width: 90em);
+@custom-media --screen-lg (min-width: 120em);
