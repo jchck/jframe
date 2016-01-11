@@ -1,16 +1,18 @@
 // Define variables to load in jFrame's Gulpfile
-var gulp 			= require('gulp'),
-	postcss			= require('gulp-postcss'),
-	cssnext			= require('cssnext'),
-	precss			= require('precss'),
-	autoprefixer	= require('autoprefixer'),
-	atImport		= require('postcss-import'),
-	mqpacker 		= require('css-mqpacker'),
-	cssnano 		= require('cssnano'),
-	size			= require('gulp-size')
-	watch			= require('gulp-watch'),
-	browserSync 	= require('browser-sync').create(),
-	browserReload	= browserSync.reload;
+var gulp 			= require('gulp');
+var	postcss			= require('gulp-postcss');
+var	cssnext			= require('cssnext');
+var	precss			= require('precss');
+var	autoprefixer	= require('autoprefixer');
+var	atImport		= require('postcss-import');
+var	mqpacker 		= require('css-mqpacker');
+var	cssnano 		= require('cssnano');
+var	size			= require('gulp-size')
+var	watch			= require('gulp-watch');
+var	cssvariables	= require('postcss-css-variables');
+var	browserSync 	= require('browser-sync').create();
+var	browserReload	= browserSync.reload;
+
 
 
 // This is the Gulp task named 'css' which executes the following function
@@ -19,13 +21,15 @@ gulp.task('css', function(){
 	// Define PostCSS plugins here, we'll pass them below
 	var postcssPlugins = [
 		atImport,
+		cssvariables,
+		cssnano,
 		autoprefixer({
 			browsers: ['last 2 versions']
 		}),
-		cssnano,
+		
 		cssnext,
 		mqpacker,
-		precss
+		precss,
 	];
 
 	// This is where the files for processing are located (/.src/jFrame.css)
