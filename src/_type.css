@@ -3,3 +3,8 @@ body{
 	line-height: var(--line-height);
 	font-size: var(--body-font-size);
 }
+
+body{
+	background: red;
+	color: green;
+}

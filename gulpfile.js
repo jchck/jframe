@@ -41,34 +41,20 @@ gulp.task('css', function(){
 		.pipe(size({gzip: true, showFiles: true, title:'Processed & gZipped!'}))
 		// This is where the processed files get piped to ('./dest')
 		.pipe(gulp.dest('./dest'));
+
 });
 
-// Init browser-sync which starts a static server & allows for browsers to reload on filesave
-gulp.task('browser-sync', function(){
-	browserSync.init(null, {
+gulp.task('bs-reload', ['css'], browserSync.reload);
+
+gulp.task('watch', function(){
+	browserSync.init({
+		files: ['src/*.css', '*.html'],
 		server: {
-			baseDir: "./"
-		}
+			baseDir: './'
+		},
 	});
+
+	gulp.watch('src/*.css', ['css', 'bs-reload']);
 });
 
-// Call for reloading browsers
-gulp.task('bs-reload', function(){
-	 browserSync.reload;
-});
 
-/**
- *
- * The default task
- * 
- * + process CSS
- * + starts a server at http://localhost:3000
- * + reloads browser when change is made to css or HTML file
- *
- */
-
-gulp.task('default', ['css', 'bs-reload', 'browser-sync'], function(){
-	gulp.start(['css'], 'bs-reload');
-	gulp.watch('src/*', ['css']);
-	gulp.watch(['index.html'], ['bs-reload']);
-});
