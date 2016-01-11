@@ -35,3 +35,13 @@ h5{
 h6{
 	font-size: var(--font-size-h6);
 }
+
+p{
+	margin-top: var(--margin-top-p);
+	margin-bottom: var(--margin-bottom-p);
+}
+
+dl, ol, ul{
+	margin-top: var(--margin-top-list);
+	margin-bottom: var(--margin-bottom-list);
+}
