@@ -1,8 +1,8 @@
 /* Alignments */
-.left{ text-align: left; }
-.center{ text-align: center; }
-.right{ text-align: right; }
-.justify{ text-align: justify; }
+.type-left{ text-align: left; }
+.type-center{ text-align: center; }
+.type-right{ text-align: right; }
+.type-justify{ text-align: justify; }
 
 /* Weights & Styles */
 .bold{ font-weight: var(--font-weight-bold); }
