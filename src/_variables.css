@@ -1,8 +1,9 @@
 :root {
+  /* Base */
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --body-font-size: 100%;
-
+  /* Headings */
   --font-family-h: inherit;
   --font-weight-h: bold;
   --line-height-h: 1.25;
@@ -14,10 +15,12 @@
   --font-size-h4: 1rem;
   --font-size-h5: .875rem;
   --font-size-h6: .75rem;
-
+  /* Paragraphs */
   --margin-top-p: 0;
   --margin-bottom-p: 0;
 
+  --font-weight-bold: bold;
+  /* Lists */
   --margin-top-list: 0;
   --margin-bottom-list: 0;
 }
