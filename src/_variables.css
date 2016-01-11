@@ -2,4 +2,17 @@
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --body-font-size: 100%;
+
+  --font-family-h: inherit;
+  --font-weight-h: bold;
+  --line-height-h: 1.25;
+  --margin-top-h: 0;
+  --margin-bottom-h: 0;
+
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1rem;
+  --font-size-h5: .875rem;
+  --font-size-h6: .75rem;
 }
