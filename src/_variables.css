@@ -27,4 +27,9 @@
   --space-2: 1.0rem;
   --space-3: 2.0rem;
   --space-4: 4.0rem;
+  /* Borders */
+  --border-width: 2px;
+  --border-color: #000;
+  --border-style: solid;
+  --border-radius: 4px;
 }
