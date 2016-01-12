@@ -1,0 +1,109 @@
+/* 
+	var(--space-1) defaults to 0.5rem
+	var(--space-2) defaults to 1rem
+	var(--space-3) defaults to 2rem
+	var(--space-4) defaults to 4rem
+*/
+
+/* Non Scoped */
+.p0{ padding: 0 }
+
+.p1{ padding: var(--space-1) }
+.px1{ padding-right: var(--space-1); padding-left: var(--space-1) }
+.py1{ padding-top: var(--space-1); padding-bottom: var(--space-1) }
+
+.p2{ padding: var(--space-2) }
+.px2{ padding-right: var(--space-2); padding-left: var(--space-2) }
+.py2{ padding-top: var(--space-2); padding-bottom: var(--space-2) }
+
+.p3{ padding: var(--space-3) }
+.px3{ padding-right: var(--space-3); padding-left: var(--space-3) }
+.py3{ padding-top: var(--space-3); padding-bottom: var(--space-3) }
+
+.p4{ padding: var(--space-4) }
+.px4{ padding-right: var(--space-4); padding-left: var(--space-4) }
+.py4{ padding-top: var(--space-4); padding-bottom: var(--space-4) }
+
+/* Scoped to var(--screen-xs) defaults to 30em */
+@media (--screen-xs){
+	.p0-xs{ padding: 0 }
+
+	.p1-xs{ padding: var(--space-1) }
+	.px1-xs{ padding-right: var(--space-1); padding-left: var(--space-1) }
+	.py1-xs{ padding-top: var(--space-1); padding-bottom: var(--space-1) }
+
+	.p2-xs{ padding: var(--space-2) }
+	.px2-xs{ padding-right: var(--space-2); padding-left: var(--space-2) }
+	.py2-xs{ padding-top: var(--space-2); padding-bottom: var(--space-2) }
+
+	.p3-xs{ padding: var(--space-3) }
+	.px3-xs{ padding-right: var(--space-3); padding-left: var(--space-3) }
+	.py3-xs{ padding-top: var(--space-3); padding-bottom: var(--space-3) }
+
+	.p4-xs{ padding: var(--space-4) }
+	.px4-xs{ padding-right: var(--space-4); padding-left: var(--space-4) }
+	.py4-xs{ padding-top: var(--space-4); padding-bottom: var(--space-4) }
+}
+
+/* Scoped to var(--screen-sm) defaults to 60em */
+@media (--screen-sm){
+	.p0-sm{ padding: 0 }
+
+	.p1-sm{ padding: var(--space-1) }
+	.px1-sm{ padding-right: var(--space-1); padding-left: var(--space-1) }
+	.py1-sm{ padding-top: var(--space-1); padding-bottom: var(--space-1) }
+
+	.p2-sm{ padding: var(--space-2) }
+	.px2-sm{ padding-right: var(--space-2); padding-left: var(--space-2) }
+	.py2-sm{ padding-top: var(--space-2); padding-bottom: var(--space-2) }
+
+	.p3-sm{ padding: var(--space-3) }
+	.px3-sm{ padding-right: var(--space-3); padding-left: var(--space-3) }
+	.py3-sm{ padding-top: var(--space-3); padding-bottom: var(--space-3) }
+
+	.p4-sm{ padding: var(--space-4) }
+	.px4-sm{ padding-right: var(--space-4); padding-left: var(--space-4) }
+	.py4-sm{ padding-top: var(--space-4); padding-bottom: var(--space-4) }
+}
+
+/* Scoped to var(--screen-md) defaults to 90em */
+@media (--screen-md){
+	.p0-md{ padding: 0 }
+
+	.p1-md{ padding: var(--space-1) }
+	.px1-md{ padding-right: var(--space-1); padding-left: var(--space-1) }
+	.py1-md{ padding-top: var(--space-1); padding-bottom: var(--space-1) }
+
+	.p2-md{ padding: var(--space-2) }
+	.px2-md{ padding-right: var(--space-2); padding-left: var(--space-2) }
+	.py2-md{ padding-top: var(--space-2); padding-bottom: var(--space-2) }
+
+	.p3-md{ padding: var(--space-3) }
+	.px3-md{ padding-right: var(--space-3); padding-left: var(--space-3) }
+	.py3-md{ padding-top: var(--space-3); padding-bottom: var(--space-3) }
+
+	.p4-md{ padding: var(--space-4) }
+	.px4-md{ padding-right: var(--space-4); padding-left: var(--space-4) }
+	.py4-md{ padding-top: var(--space-4); padding-bottom: var(--space-4) }
+}
+
+/* Scoped to var(--screen-lg) defaults to 120em */
+@media (--screen-lg){
+	.p0-lg{ padding: 0 }
+
+	.p1-lg{ padding: var(--space-1) }
+	.px1-lg{ padding-right: var(--space-1); padding-left: var(--space-1) }
+	.py1-lg{ padding-top: var(--space-1); padding-bottom: var(--space-1) }
+
+	.p2-lg{ padding: var(--space-2) }
+	.px2-lg{ padding-right: var(--space-2); padding-left: var(--space-2) }
+	.py2-lg{ padding-top: var(--space-2); padding-bottom: var(--space-2) }
+
+	.p3-lg{ padding: var(--space-3) }
+	.px3-lg{ padding-right: var(--space-3); padding-left: var(--space-3) }
+	.py3-lg{ padding-top: var(--space-3); padding-bottom: var(--space-3) }
+
+	.p4-lg{ padding: var(--space-4) }
+	.px4-lg{ padding-right: var(--space-4); padding-left: var(--space-4) }
+	.py4-lg{ padding-top: var(--space-4); padding-bottom: var(--space-4) }
+}

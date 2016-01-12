@@ -8,4 +8,7 @@
 @import '_type-scale';
 @import '_type-utils';
 
+@import '_space-margin';
+@import '_space-padding';
+
 @import '_layout-utils';

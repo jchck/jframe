@@ -18,9 +18,13 @@
   /* Paragraphs */
   --margin-top-p: 0;
   --margin-bottom-p: 0;
-
   --font-weight-bold: bold;
   /* Lists */
   --margin-top-list: 0;
   --margin-bottom-list: 0;
+  /* White Space (margin & padding) */
+  --space-1: 0.5rem;
+  --space-2: 1.0rem;
+  --space-3: 2.0rem;
+  --space-4: 4.0rem;
 }
