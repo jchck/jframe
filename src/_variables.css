@@ -32,4 +32,6 @@
   --border-color: #000;
   --border-style: solid;
   --border-radius: 4px;
+  /* Grid */
+  --container-width: 64em;
 }
