@@ -1,22 +1,23 @@
-.display-none{ display: none; }
+.hide{ display: none; }
 
 @media (--screen-xs){
-	.display-none-xs{ display: none; }
+	.hide-xs{ display: none; }
 }
 
 @media (--screen-sm){
-	.display-none-sm{ display: none; }
+	.hide-sm{ display: none; }
 }
 
 @media (--screen-md){
-	.display-none-md{ display: none; }
+	.hide-md{ display: none; }
 }
 
 @media (--screen-lg){
-	.display-none-lg{ display: none; }
+	.hide-lg{ display: none; }
 }
 
-.hide{
+/* Use this class for hiding things to be read for screen readers */
+.hide-sr{
 	display: absolute !important;
 	height: 1px;
 	width: 1px;
