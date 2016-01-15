@@ -1,0 +1,27 @@
+@media (--screen-xs){
+	.col-xs{ float: left; box-sizing: border-box; }
+
+	.col-1-xs{ width: calc(1/12 * 100%); }
+
+	.col-2-xs{ width: calc(2/12 * 100%); }
+
+	.col-3-xs{ width: calc(3/12 * 100%); }
+
+	.col-4-xs{ width: calc(4/12 * 100%); }
+
+	.col-5-xs{ width: calc(5/12 * 100%); }
+
+	.col-6-xs{ width: calc(6/12 * 100%); }
+
+	.col-7-xs{ width: calc(7/12 * 100%); }
+
+	.col-8-xs{ width: calc(8/12 * 100%); }
+
+	.col-9-xs{ width: calc(9/12 * 100%); }
+
+	.col-10-xs{ width: calc(10/12 * 100%); }
+
+	.col-11-xs{ width: calc(11/12 * 100%); }
+
+	.col-12-xs{ width: 100%; }
+}

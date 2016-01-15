@@ -1,0 +1,27 @@
+@media (--screen-md){
+	.col-md{ float: left; box-sizing: border-box; }
+
+	.col-1-md{ width: calc(1/12 * 100%); }
+
+	.col-2-md{ width: calc(2/12 * 100%); }
+
+	.col-3-md{ width: calc(3/12 * 100%); }
+
+	.col-4-md{ width: calc(4/12 * 100%); }
+
+	.col-5-md{ width: calc(5/12 * 100%); }
+
+	.col-6-md{ width: calc(6/12 * 100%); }
+
+	.col-7-md{ width: calc(7/12 * 100%); }
+
+	.col-8-md{ width: calc(8/12 * 100%); }
+
+	.col-9-md{ width: calc(9/12 * 100%); }
+
+	.col-10-md{ width: calc(10/12 * 100%); }
+
+	.col-11-md{ width: calc(11/12 * 100%); }
+
+	.col-12-md{ width: 100%; }
+}
