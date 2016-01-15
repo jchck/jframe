@@ -22,6 +22,7 @@
 .clearfix:after{
 	clear: both;
 }
-.clearfix{
+/* Uncomment this for deeper IE support */
+/*.clearfix{
 	*zoom: 1;
-}
+}*/
