@@ -1,19 +1,19 @@
-.display-none{ display: none }
+.display-none{ display: none; }
 
 @media (--screen-xs){
-	.display-none-xs{ display: none }
+	.display-none-xs{ display: none; }
 }
 
 @media (--screen-sm){
-	.display-none-sm{ display: none }
+	.display-none-sm{ display: none; }
 }
 
 @media (--screen-md){
-	.display-none-md{ display: none }
+	.display-none-md{ display: none; }
 }
 
 @media (--screen-lg){
-	.display-none-lg{ display: none }
+	.display-none-lg{ display: none; }
 }
 
 .hide{
