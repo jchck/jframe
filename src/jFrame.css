@@ -1,10 +1,11 @@
-@import 'colors.css/myth/colors.css';
+@import 'colors.css/myth/variables.css';
 @import '_variables';
 
 @import '_media-queries';
 
 @import '_base-reset';
 @import '_base-colors';
+@import 'colors.css/myth/skins.css';
 @import '_base-transitions';
 
 @import '_type';
