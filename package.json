@@ -27,6 +27,7 @@
     "precss": "^1.4.0"
   },
   "dependencies": {
+    "colors.css": "^2.3.0",
     "normalize.css": "^3.0.3"
   }
 }
