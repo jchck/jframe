@@ -39,21 +39,18 @@ gulp.task('css', function(){
 		.pipe(size({gzip: false, showFiles: true, title:'Processed!'}))
 		.pipe(size({gzip: true, showFiles: true, title:'Processed & gZipped!'}))
 		// This is where the processed files get piped to ('./dest')
-		.pipe(gulp.dest('./dest'));
+		.pipe(gulp.dest('./dest'))
+		.pipe(browserSync.stream());
 
 });
 
-gulp.task('bs-reload', ['css'], browserSync.reload);
-
-gulp.task('watch', function(){
+gulp.task('watch', ['css'], function(){
 	browserSync.init({
-		files: ['src/*.css', '*.html'],
-		server: {
-			baseDir: './'
-		},
+		server: './',
 	});
 
-	gulp.watch('src/*.css', ['css', 'bs-reload']);
+	gulp.watch('./src/*.css', ['css']);
+	gulp.watch('index.html').on('change', browserSync.reload);
 });
 
 
