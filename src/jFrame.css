@@ -4,6 +4,7 @@
 @import '_media-queries';
 
 @import '_base-reset';
+@import '_base-colors';
 
 @import '_type';
 @import '_type-utils';

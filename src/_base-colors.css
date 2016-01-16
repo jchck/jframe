@@ -1,0 +1,9 @@
+body{
+	background: var(--body-background-color);
+	color: var(--body-color);
+}
+
+h1, h2, h3, h4, h5, h6{ color: var(--heading-color); }
+
+a{ color: var(--link-color); }
+a:hover{ color: var(--link-hover-color); }

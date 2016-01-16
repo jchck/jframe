@@ -3,6 +3,12 @@
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --body-font-size: 100%;
+  /* Base Colors */
+  --body-background-color: var(--white);
+  --body-color: var(--black);
+  --heading-color: var(--black);
+  --link-color: var(--blue);
+  --link-hover-color: var(--black);
   /* Headings */
   --font-family-h: inherit;
   --font-weight-h: bold;
