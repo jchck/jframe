@@ -1,0 +1,9 @@
+pre{
+	max-height: var(--max-height-pre);
+	overflow-x: scroll;
+}
+
+code{
+	font-family: var(--font-family-code);
+	font-size: var(--font-size-code);
+}

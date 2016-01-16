@@ -19,6 +19,10 @@
   --margin-top-p: 0;
   --margin-bottom-p: 0;
   --font-weight-bold: bold;
+  /* Code */
+  --max-height-pre: 25vh;
+  --font-family-code: Menlo,Monaco,Consolas,"Courier New",monospace;
+  --font-size-code: 75%;
   /* Lists */
   --margin-top-list: 0;
   --margin-bottom-list: 0;
