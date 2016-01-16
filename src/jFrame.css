@@ -5,6 +5,7 @@
 
 @import '_base-reset';
 @import '_base-colors';
+@import '_base-transitions';
 
 @import '_type';
 @import '_type-utils';

@@ -9,6 +9,8 @@
   --heading-color: var(--black);
   --link-color: var(--blue);
   --link-hover-color: var(--black);
+  /* Base Transitions */
+  --transition-speed: 0.3s;
   /* Headings */
   --font-family-h: inherit;
   --font-weight-h: bold;

@@ -1,0 +1,4 @@
+.ease{ transition: all var(--transition-speed) ease; }
+.ease-in{ transition: all var(--transition-speed) ease-in; }
+.ease-in-out{ transition: all var(--transition-speed) ease-in-out; }
+.ease-out{ transition: all var(--transition-speed) ease-out; }
