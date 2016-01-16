@@ -1,3 +1,26 @@
+// jFrame's Gulp file
+
+/**
+ *
+ * Available Gulp Tasks
+ * 
+ * $ gulp 
+ * 		-> Starts server at http://localhost:3000
+ * 		-> Watches for changes in the /src directory & index.html file and acts appropriatly
+ *		-> Triggers CSS compiling task if needed
+ * 		-> Injects changes/reloads the browser as needed
+ *
+ * $ gulp watch
+ *		-> Exactly the same as `$ gulp` task above
+ * 
+ * $ gulp css
+ * 		-> Compiles/processes stylesheets
+ *		-> To disable minification, comment out `cssnano` variable in the postcssPlugins array
+ * 
+ *
+ */
+
+
 // Define variables to load in jFrame's Gulpfile
 var gulp 			= require('gulp');
 var	postcss			= require('gulp-postcss');
@@ -44,6 +67,7 @@ gulp.task('css', function(){
 
 });
 
+// This tells gulp to watch whats going on in /src/*.css and index.html and reload the browser on change
 gulp.task('watch', ['css'], function(){
 	browserSync.init({
 		server: './',
@@ -53,4 +77,5 @@ gulp.task('watch', ['css'], function(){
 	gulp.watch('index.html').on('change', browserSync.reload);
 });
 
-
+// This is the fafault gulp task which just starts the watch task
+gulp.task('default', ['watch']);
