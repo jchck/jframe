@@ -1,8 +1,8 @@
-.border{ border: var(--border-width) var(--border-style) var(--border-color); }
-.border-top{ border-top: var(--border-width) var(--border-style) var(--border-color); }
-.border-left{ border-left: var(--border-width) var(--border-style) var(--border-color); }
-.border-bottom{ border-bottom: var(--border-width) var(--border-style) var(--border-color); }
-.border-right{ border-right: var(--border-width) var(--border-style) var(--border-color); }
+.border{ border: var(--border-width) var(--border-style); }
+.border-top{ border-top: var(--border-width) var(--border-style); }
+.border-left{ border-left: var(--border-width) var(--border-style); }
+.border-bottom{ border-bottom: var(--border-width) var(--border-style); }
+.border-right{ border-right: var(--border-width) var(--border-style); }
 
 .border-rounded{ border-radius: var(--border-radius); }
 .border-circle{ border-radius: 50%; }
