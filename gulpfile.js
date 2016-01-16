@@ -22,7 +22,7 @@ gulp.task('css', function(){
 	var postcssPlugins = [
 		atImport,
 		cssvariables,
-		//cssnano,
+		cssnano,
 		autoprefixer({
 			browsers: ['last 2 versions']
 		}),
