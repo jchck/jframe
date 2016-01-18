@@ -1,0 +1,14 @@
+
+@media(--screen-sm){
+	.main{ 
+		margin-left: 12rem; 
+	}
+	.nav{ 
+		position: fixed; 
+		width: 12rem; 
+		overflow: auto; 
+		top: 0; 
+		bottom: 0; 
+		left: 0;
+	}
+}
