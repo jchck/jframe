@@ -3,14 +3,13 @@
 
 @import '_media-queries';
 
-@import '_base-reset';
-@import '_base-colors';
-@import 'colors.css/myth/skins.css';
-@import '_base-transitions';
-
+@import '_reset';
 @import '_type';
 @import '_type-utils';
 @import '_type-code';
+
+@import '_colors';
+@import 'colors.css/myth/skins.css';
 
 @import '_space-margin';
 @import '_space-padding';
@@ -25,3 +24,5 @@
 @import '_grid-sm';
 @import '_grid-md';
 @import '_grid-lg';
+
+@import '_transitions';

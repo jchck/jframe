@@ -1,4 +1,16 @@
 .flex{ display: flex; }
+@media (--screen-xs){
+	.flex-xs{ display: flex; }
+}
+@media (--screen-sm) {
+	.flex-sm{ display: flex; }
+}
+@media (--screen-md) {
+	.flex-md{ display: flex; }
+}
+@media (--screen-lg) {
+	.flex-lg{ display: flex; }
+}
 
 .flex-column{ flex-direction: column; }
 .flex-wrap{ flex-wrap: wrap; }
@@ -23,16 +35,3 @@
 
 .flex-first{ order: -1; }
 .flex-last{ order: 99999; }
-
-@media (--screen-xs){
-	.flex-xs{ display: flex; }
-}
-@media (--screen-sm) {
-	.flex-sm{ display: flex; }
-}
-@media (--screen-md) {
-	.flex-md{ display: flex; }
-}
-@media (--screen-lg) {
-	.flex-lg{ display: flex; }
-}

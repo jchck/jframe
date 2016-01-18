@@ -1,51 +1,61 @@
 :root {
-  /* Base */
+  /* Type */
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
   --body-font-size: 100%;
-  /* Base Colors */
+
+  --heading-font-family: inherit;
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --heading-margin-top: 0;
+  --heading-margin-bottom: 0;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --h5-font-size: .875rem;
+  --h6-font-size: .75rem;
+
+  --measure-width: 30em;
+
+  --p-margin-top: 0;
+  --p-margin-bottom: 0;
+
+  --list-margin-top: 0;
+  --list-margin-bottom: 0;
+
+  --font-weight-bold: bold;
+
+  --pre-max-height: 25vh;
+  --code-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  --code-font-size: 75%;
+
+  /* Colors
+     Variables provided from node_modules/colors.css/myth
+  */
   --body-background-color: var(--white);
   --body-color: var(--black);
   --heading-color: var(--black);
   --link-color: var(--blue);
   --link-hover-color: var(--black);
-  /* Base Transitions */
-  --transition-speed: 0.3s;
 
-  --measure-width: 30em;
-
-  /* Headings */
-  --font-family-h: inherit;
-  --font-weight-h: bold;
-  --line-height-h: 1.25;
-  --margin-top-h: 0;
-  --margin-bottom-h: 0;
-  --font-size-h1: 2rem;
-  --font-size-h2: 1.5rem;
-  --font-size-h3: 1.25rem;
-  --font-size-h4: 1rem;
-  --font-size-h5: .875rem;
-  --font-size-h6: .75rem;
-  /* Paragraphs */
-  --margin-top-p: 0;
-  --margin-bottom-p: 0;
-  --font-weight-bold: bold;
-  /* Code */
-  --max-height-pre: 25vh;
-  --font-family-code: Menlo,Monaco,Consolas,"Courier New",monospace;
-  --font-size-code: 75%;
-  /* Lists */
-  --margin-top-list: 0;
-  --margin-bottom-list: 0;
-  /* White Space (margin & padding) */
+  /* White Space 
+     Margin & Padding 
+  */
   --space-1: 0.5rem;
   --space-2: 1.0rem;
   --space-3: 2.0rem;
   --space-4: 4.0rem;
+
   /* Borders */
   --border-width: 2px;
   --border-style: solid;
   --border-radius: 4px;
+
   /* Grid */
   --container-width: 64em;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+    
 }
