@@ -1,5 +1,5 @@
 pre{
-	//max-height: var(--pre-max-height);
+	max-height: var(--pre-max-height);
 	overflow-x: scroll;
 }
 

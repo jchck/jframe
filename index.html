@@ -15,34 +15,215 @@
 	<main class="main">
 		<header class="py3-sm px3-sm bg-aqua">
 			<h1>jFrame</h1>
-			<p>delightfully simple and scalable css</p>
+			<p>delightfully simple scalable css</p>
 		</header>
 		<div class="container">
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy">
+			<h2 class="mt2-sm mb2-sm type-center">Getting Started</h2>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
-					<h2 class="mt2-sm mb2-sm">Getting Started</h2>
-					<p>Lorem ipsum Est dolor irure consectetur reprehenderit elit et fugiat sit in cillum in in exercitation incididunt eiusmod et magna voluptate voluptate.</p>
-					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et labore consectetur sunt deserunt ad dolore commodo proident tempor exercitation ea magna consectetur irure in veniam voluptate mollit enim nostrud ad qui adipisicing ex ut aliquip enim dolor ut aute et velit exercitation elit proident aute nulla consequat sint ut velit velit dolore officia elit est elit et amet commodo velit nulla sed sint ad officia labore Duis proident ut sint in ea ex occaecat aute ea anim culpa enim in veniam eu elit cupidatat ea commodo magna sint dolor nostrud nulla ut adipisicing Duis aliquip et dolore anim amet fugiat nostrud incididunt Duis sed officia officia aliqua consectetur eu laborum voluptate nisi culpa in sit eu in ullamco elit Excepteur Ut do ex ullamco culpa ad enim eiusmod irure occaecat ut aliqua non irure fugiat cillum veniam consequat Ut in in est aliquip sint nulla minim incididunt est fugiat sint incididunt qui proident quis in est deserunt officia in id proident consequat mollit veniam velit non eiusmod sint nulla sed id aliqua officia anim proident exercitation enim veniam et labore tempor culpa aute ut commodo elit deserunt eiusmod enim voluptate sit officia commodo incididunt in incididunt proident sunt sit aliquip nulla in tempor anim ea in qui consectetur non quis anim sunt tempor magna.</p>
+					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 				<div class="col col-6 px2-sm">
-					<h2 class="mt2-sm mb2-sm">Code Sample</h2>
-					<pre class="bg-olive border-rounded p2">
-						<code>
-@media(--screen-sm){
-	.main{ 
-		margin-left: 12rem; 
-	}
-	.nav{ 
-		position: fixed; 
-		width: 12rem; 
-		overflow: auto; 
-		top: 0; 
-		bottom: 0; 
-		left: 0;
-	}
-}
+						<pre class="border border--silver p1">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charet="utf8"&gt;
+	&lt;title&gt;jframe&lt;/title&gt;
+	&lt;meta title="description" content="delightfully simple scalable css"&gt;
+	&lt;meta title="author" content="Justin Chick"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
 						</code>
 					</pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">Typography</h2>
+			<p>First we set the base font-family, line-height, font-size, and we create our type scale.</p>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">the html</h3>
+					<pre class="border border--silver p1">
+<code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;
+
+&lt;h1&gt;heading 1&lt;h1&gt;
+&lt;h2&gt;heading 2&lt;/h2&gt;
+&lt;h3&gt;heading 3&lt;/h3&gt;
+&lt;h4&gt;heading 4&lt;/h4&gt;
+&lt;h5&gt;heading 5&lt;/h5&gt;
+&lt;h6&gt;heading 6&lt;/h6&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;First&lt;/li&gt;
+	&lt;li&gt;Second&lt;/li&gt;
+	&lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">the css</h3>
+					<pre class="border border--silver p1">
+<code>body{
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	font-size: var(--body-font-size);
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--heading-font-family);
+	font-weight: var(--heading-font-weight);
+	line-height: var(--heading-line-height);
+	margin-top: var(--heading-margin-top);
+	margin-bottom: var(--heading-margin-bottom);
+}
+
+h1, .h1{ font-size: var(--h1-font-size); }
+
+h2, .h2{ font-size: var(--h2-font-size); }
+
+h3, .h3{ font-size: var(--h3-font-size); }
+
+h4, .h4{ font-size: var(--h4-font-size); }
+
+h5, .h5{ font-size: var(--h5-font-size); }
+
+h6, .h6{ font-size: var(--h6-font-size); }
+
+.measure{ max-width: var(--measure-width); }
+
+p{
+	margin-top: var(--p-margin-top);
+	margin-bottom: var(--p-margin-bottom);
+}
+
+dl, ol, ul{
+	margin-top: var(--list-margin-top);
+	margin-bottom: var(--list-margin-bottom);
+}</code>
+					</pre>
+				</div>
+			</section>
+			<p>Then we add some utility classes for type alignments, weights, and styles.</p>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3>the html</h3>
+					<pre class="border border--silver p1">
+<code>&lt;h1 class="type-left"&gt;heading 1&lt;h1&gt;
+&lt;h2 class="type-center"&gt;heading 2&lt;/h2&gt;
+&lt;h3 class="type-right"&gt;heading 3&lt;/h3&gt;
+&lt;p class="type-justify"&gt;Lorem ipsum...&lt;/p&gt;
+
+&lt;span class="bold"&gt;Bold&lt;/span&gt;
+&lt;span class="regular"&gt;Regular&lt;/span&gt;
+&lt;span class="italic"&gt;Italic&lt;/span&gt;
+&lt;span class="uppercase"&gt;Uppercase&lt;/span&gt;
+&lt;span class="lowercase"&gt;Lowercase&lt;/span&gt;
+&lt;span class="capitalize"&gt;Capitalize&lt;/span&gt;</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3>the css</h3>
+					<pre class="border border--silver p1">
+<code>/* Alignments */
+.type-left{ text-align: left; }
+.type-center{ text-align: center; }
+.type-right{ text-align: right; }
+.type-justify{ text-align: justify; }
+
+/* Weights & Styles */
+.bold{ font-weight: var(--font-weight-bold); }
+.regular{ font-weight: normal; }
+.italic{ font-style: italic; }
+.uppercase{ text-transform: uppercase; }
+.lowercase{ text-transform: lowercase; }
+.capitalize{ text-transform: capitalize; letter-spacing: .1em; }</code>
+					</pre>
+				</div>
+			</section>
+
+			<p>Finally, we define code block styles.</p>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3>the html</h3>
+					<pre class="border border--silver p1">
+<code>&lt;pre&gt;
+	&lt;code&gt;
+	...
+	&lt;/code&gt;
+&lt;/pre&gt;</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3>the css</h3>
+					<pre class="border border--silver p1">
+<code>pre{
+	max-height: var(--pre-max-height);
+	overflow-x: scroll;
+}
+
+code{
+	font-family: var(--code-font-family);
+	font-size: var(--code-font-size);
+}</code>
+					</pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">Colors</h2>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+				<div class="col col-6 px2-sm">
+					<pre class="border border--silver p1">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charet="utf8"&gt;
+	&lt;title&gt;jframe&lt;/title&gt;
+	&lt;meta title="description" content="delightfully simple scalable css"&gt;
+	&lt;meta title="author" content="Justin Chick"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
+						</code>
+					</pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">White Space</h2>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<pre class="border border--silver p1">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charet="utf8"&gt;
+	&lt;title&gt;jframe&lt;/title&gt;
+	&lt;meta title="description" content="delightfully simple scalable css"&gt;
+	&lt;meta title="author" content="Justin Chick"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
+						</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</section>
 		</div>
