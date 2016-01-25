@@ -14,3 +14,8 @@
 
 .nav a{ text-decoration: none }
 .nav a:hover{ background-color: #fff }
+
+.twitter{ 
+	bottom: 0; 
+	left: calc(4/12 * 100%); 
+}
