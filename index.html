@@ -176,56 +176,152 @@ code{
 			</section>
 
 			<h2 class="mt2-sm mb2-sm type-center">Colors</h2>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+			<p>We first set our base background and text colors as well link and link :hover colors</p>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
-					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<h3>the html</h3>
+					<pre class="border border--silver p1"><code>&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
 				</div>
 				<div class="col col-6 px2-sm">
+					<h3>the css</h3>
 					<pre class="border border--silver p1">
-<code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta charet="utf8"&gt;
-	&lt;title&gt;jframe&lt;/title&gt;
-	&lt;meta title="description" content="delightfully simple scalable css"&gt;
-	&lt;meta title="author" content="Justin Chick"&gt;
-	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
- 
-&lt;/body&gt;
-&lt;/html&gt;
-						</code>
+<code>body{
+	background: var(--body-background-color);
+	color: var(--body-color);
+}
+
+h1, h2, h3, h4, h5, h6{ color: var(--heading-color); }
+
+a{ color: var(--link-color); }
+a:hover{ color: var(--link-hover-color); }</code>
 					</pre>
 				</div>
 			</section>
 
-			<h2 class="mt2-sm mb2-sm type-center">White Space</h2>
+			<p>Our color palet and the remaining color utilities come to us from <a href="#" target="_blank">colors.css</a>.</p>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
-					<pre class="border border--silver p1">
-<code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta charet="utf8"&gt;
-	&lt;title&gt;jframe&lt;/title&gt;
-	&lt;meta title="description" content="delightfully simple scalable css"&gt;
-	&lt;meta title="author" content="Justin Chick"&gt;
-	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
- 
-&lt;/body&gt;
-&lt;/html&gt;
-						</code>
-					</pre>
+					<h3>the html</h3>
+					<pre class="border border--silver p1"><code>&ltdiv class="bg-navy"&gt;
+	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
+	&lt;div class="border border--red"&gt;
+	...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 				</div>
 				<div class="col col-6 px2-sm">
-					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<h3>the css</h3>
+					<pre class="border border--silver p1">
+<code>/* Backgrounds */
+
+.bg-navy {    background-color: var(--navy);    }
+.bg-blue {    background-color: var(--blue);    }
+.bg-aqua {    background-color: var(--aqua);    }
+.bg-teal {    background-color: var(--teal);    }
+.bg-olive {   background-color: var(--olive);   }
+.bg-green {   background-color: var(--green);   }
+.bg-lime {    background-color: var(--lime);    }
+.bg-yellow {  background-color: var(--yellow);  }
+.bg-orange {  background-color: var(--orange);  }
+.bg-red {     background-color: var(--red);     }
+.bg-fuchsia { background-color: var(--fuchsia); }
+.bg-purple {  background-color: var(--purple);  }
+.bg-maroon {  background-color: var(--maroon);  }
+.bg-white {   background-color: var(--white);   }
+.bg-gray {    background-color: var(--gray);    }
+.bg-silver {  background-color: var(--silver);  }
+.bg-black {   background-color: var(--black);   }
+
+
+/* Colors */
+
+.navy {       color: var(--navy);    }
+.blue {       color: var(--blue);    }
+.aqua {       color: var(--aqua);    }
+.teal {       color: var(--teal);    }
+.olive {      color: var(--olive);   }
+.green {      color: var(--green);   }
+.lime {       color: var(--lime);    }
+.yellow {     color: var(--yellow);  }
+.orange {     color: var(--orange);  }
+.red {        color: var(--red);     }
+.fuchsia {    color: var(--fuchsia); }
+.purple {     color: var(--purple);  }
+.maroon {     color: var(--maroon);  }
+.white {      color: var(--white);   }
+.silver {     color: var(--silver);  }
+.gray {       color: var(--gray);    }
+.black {      color: var(--black);   }
+
+/* Border colors 
+
+   Use with border utility that sets border-width and style 
+   i.e .border { border-width: 1px; border-style: solid; }     
+*/
+
+.border--navy {    border-color: var(--navy); }
+.border--blue {    border-color: var(--blue); }
+.border--aqua {    border-color: var(--aqua); }
+.border--teal {    border-color: var(--teal); }
+.border--olive {   border-color: var(--olive); }
+.border--green {   border-color: var(--green); }
+.border--lime {    border-color: var(--lime); }
+.border--yellow {  border-color: var(--yellow); }
+.border--orange {  border-color: var(--orange); }
+.border--red {     border-color: var(--red); }
+.border--fuchsia { border-color: var(--fuchsia); }
+.border--purple {  border-color: var(--purple); }
+.border--maroon {  border-color: var(--maroon); }
+.border--white {   border-color: var(--white); }
+.border--gray {    border-color: var(--gray); }
+.border--silver {  border-color: var(--silver); }
+.border--black {   border-color: var(--black); }
+
+
+/* Fills for SVG */
+
+.fill-navy {    fill: var(--navy); }
+.fill-blue {    fill: var(--blue); }
+.fill-aqua {    fill: var(--aqua); }
+.fill-teal {    fill: var(--teal); }
+.fill-olive {   fill: var(--olive); }
+.fill-green {   fill: var(--green); }
+.fill-lime {    fill: var(--lime); }
+.fill-yellow {  fill: var(--yellow); }
+.fill-orange {  fill: var(--orange); }
+.fill-red {     fill: var(--red); }
+.fill-fuchsia { fill: var(--fuchsia); }
+.fill-purple {  fill: var(--purple); }
+.fill-maroon {  fill: var(--maroon); }
+.fill-white {   fill: var(--white); }
+.fill-gray {    fill: var(--gray); }
+.fill-silver {  fill: var(--silver); }
+.fill-black {   fill: var(--black); }
+
+/* Strokes for SVG */
+
+.stroke-navy {    stroke: var(--navy); }
+.stroke-blue {    stroke: var(--blue); }
+.stroke-aqua {    stroke: var(--aqua); }
+.stroke-teal {    stroke: var(--teal); }
+.stroke-olive {   stroke: var(--olive); }
+.stroke-green {   stroke: var(--green); }
+.stroke-lime {    stroke: var(--lime); }
+.stroke-yellow {  stroke: var(--yellow); }
+.stroke-orange {  stroke: var(--orange); }
+.stroke-red {     stroke: var(--red); }
+.stroke-fuchsia { stroke: var(--fuchsia); }
+.stroke-purple {  stroke: var(--purple); }
+.stroke-maroon {  stroke: var(--maroon); }
+.stroke-white {   stroke: var(--white); }
+.stroke-gray {    stroke: var(--gray); }
+.stroke-silver {  stroke: var(--silver); }
+.stroke-black {   stroke: var(--black); }
+</code>
+					</pre>
 				</div>
 			</section>
+			
 		</div>
 		<nav class="nav bg-blue"></nav>
 	</main>
