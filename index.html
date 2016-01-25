@@ -19,13 +19,11 @@
 		</header>
 		<div class="container">
 			<h2 class="mt2-sm mb2-sm type-center">Getting Started</h2>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
-					<p>Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
-				</div>
-				<div class="col col-6 px2-sm">
-						<pre class="border border--silver p1">
-<code>&lt;!DOCTYPE html&gt;
+			<p class="h3">Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">index.html</h3>
+					<pre class="border border--silver p1"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 	&lt;meta charet="utf8"&gt;
@@ -36,11 +34,124 @@
 	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
- 
+	&lt;!-- where the magic happens --&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-						</code>
-					</pre>
+&lt;/html&gt;</code></pre>
+				</div>
+			</section>
+
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/jFrame.css</h3>
+					<pre class="border border--silver p1"><code>/* jFrame Styles */
+@import 'colors.css/myth/variables.css';
+@import '_variables';
+
+@import '_media-queries';
+
+@import '_reset';
+@import '_type';
+@import '_type-utils';
+@import '_type-code';
+
+@import '_colors';
+@import 'colors.css/myth/skins.css';
+
+@import '_space-margin';
+@import '_space-padding';
+
+@import '_layout-borders';
+@import '_layout-utils';
+@import '_layout-flex';
+@import '_layout-hides';
+
+@import '_grid';
+@import '_grid-xs';
+@import '_grid-sm';
+@import '_grid-md';
+@import '_grid-lg';
+
+@import '_transitions';
+
+/* Site Specific Styles */
+@import 'site.css'</code></pre>
+				</div>
+			</section>
+
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_variables.css</h3>
+					<pre class="border border--silver p1"><code>:root {
+  /* Type */
+  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --line-height: 1.5;
+  --body-font-size: 100%;
+
+  --heading-font-family: inherit;
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --heading-margin-top: 0;
+  --heading-margin-bottom: 0;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1rem;
+  --h5-font-size: .875rem;
+  --h6-font-size: .75rem;
+
+  --measure-width: 30em;
+
+  --p-margin-top: 0;
+  --p-margin-bottom: 1rem;
+
+  --list-margin-top: 0;
+  --list-margin-bottom: 0;
+
+  --font-weight-bold: bold;
+
+  --pre-max-height: 25vh;
+  --code-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  --code-font-size: 75%;
+
+  /* Colors
+     Variables provided from node_modules/colors.css/myth
+  */
+  --body-background-color: var(--white);
+  --body-color: var(--black);
+  --heading-color: var(--black);
+  --link-color: var(--blue);
+  --link-hover-color: var(--black);
+
+  /* White Space 
+     Margin & Padding 
+  */
+  --space-1: 0.5rem;
+  --space-2: 1.0rem;
+  --space-3: 2.0rem;
+  --space-4: 4.0rem;
+
+  /* Borders */
+  --border-width: 2px;
+  --border-style: solid;
+  --border-radius: 4px;
+
+  /* Grid */
+  --container-width: 64em;
+
+  /* Transitions */
+  --transition-speed: 0.3s;
+    
+}</code></pre>
+				</div>
+			</section>
+
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_media-queries.css</h3>
+					<pre class="border border--silver p1"><code>@custom-media --screen-xs (min-width: 30em);
+@custom-media --screen-sm (min-width: 60em);
+@custom-media --screen-md (min-width: 90em);
+@custom-media --screen-lg (min-width: 120em);</code></pre>
 				</div>
 			</section>
 
