@@ -35,3 +35,5 @@ dl, ol, ul{
 	margin-top: var(--list-margin-top);
 	margin-bottom: var(--list-margin-bottom);
 }
+
+.list-reset{ list-style: none; padding-left: 0 }
