@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 
 	<!-- Add a page title -->
-	<title>jFrame</title>
+	<title>jFrame.css</title>
 	<meta title="description" content="jFrame">
 	<meta title="author" content="Justin Chick">
 
@@ -14,7 +14,7 @@
 <body>
 	<main class="main">
 		<header class="py3-sm px3-sm border-bottom border--silver">
-			<h1>jFrame</h1>
+			<h1>jFrame.css</h1>
 			<p>delightfully simple scalable css</p>
 		</header>
 		<div class="container">
@@ -477,6 +477,810 @@ a:hover{ color: var(--link-hover-color); }</code>
 	...
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">White Space</h2>
+			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_space-margin.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>/* Non Scoped */
+.mxn1{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
+.mxn2{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
+.mxn3{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
+.mxn4{ margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+.m0{ margin: 0; }
+.mt0{ margin-top: 0; }
+.mr0{ margin-right: 0; }
+.mb0{ margin-bottom: 0; }
+.ml0{ margin-left: 0; }
+
+.m1{ margin: var(--space-1); }
+.mt1{ margin-top: var(--space-1); }
+.mr1{ margin-right: var(--space-1); }
+.mb1{ margin-bottom: var(--space-1); }
+.ml1{ margin-left: var(--space-1); }
+
+.m2{ margin: var(--space-2); }
+.mt2{ margin-top: var(--space-2); }
+.mr2{ margin-right: var(--space-2); }
+.mb2{ margin-bottom: var(--space-2); }
+.ml2{ margin-left: var(--space-2); }
+
+.m3{ margin: var(--space-3); }
+.mt3{ margin-top: var(--space-3); }
+.mr3{ margin-right: var(--space-3); }
+.mb3{ margin-bottom: var(--space-3); }
+.ml3{ margin-left: var(--space-3); }
+
+.m4{ margin: var(--space-4); }
+.mt4{ margin-top: var(--space-4); }
+.mr4{ margin-right: var(--space-4); }
+.mb4{ margin-bottom: var(--space-4); }
+.ml4{ margin-left: var(--space-4); }
+
+.mx-auto{ margin-left: auto; margin-right: auto; }
+
+/* Scoped to var(--screen-xs) defaults to 30em */
+@media (--screen-xs){
+	.mxn1-xs{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
+	.mxn2-xs{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
+	.mxn3-xs{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
+	.mxn4-xs{ margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+	.m0-xs{ margin: 0; }
+	.mt0-xs{ margin-top: 0; }
+	.mr0-xs{ margin-right: 0; }
+	.mb0-xs{ margin-bottom: 0; }
+	.ml0-xs{ margin-left: 0; }
+
+	.m1-xs{ margin: var(--space-1); }
+	.mt1-xs{ margin-top: var(--space-1); }
+	.mr1-xs{ margin-right: var(--space-1); }
+	.mb1-xs{ margin-bottom: var(--space-1); }
+	.ml1-xs{ margin-left: var(--space-1); }
+
+	.m2-xs{ margin: var(--space-2); }
+	.mt2-xs{ margin-top: var(--space-2); }
+	.mr2-xs{ margin-right: var(--space-2); }
+	.mb2-xs{ margin-bottom: var(--space-2); }
+	.ml2-xs{ margin-left: var(--space-2); }
+
+	.m3-xs{ margin: var(--space-3); }
+	.mt3-xs{ margin-top: var(--space-3); }
+	.mr3-xs{ margin-right: var(--space-3); }
+	.mb3-xs{ margin-bottom: var(--space-3); }
+	.ml3-xs{ margin-left: var(--space-3); }
+
+	.m4-xs{ margin: var(--space-4); }
+	.mt4-xs{ margin-top: var(--space-4); }
+	.mr4-xs{ margin-right: var(--space-4); }
+	.mb4-xs{ margin-bottom: var(--space-4); }
+	.ml4-xs{ margin-left: var(--space-4); }
+
+	.mx-auto-xs{ margin-left: auto; margin-right: auto; }
+}
+
+/* Scoped to var(--screen-sm) defaults to 60em */
+@media (--screen-sm){
+	.mxn1-sm{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
+	.mxn2-sm{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
+	.mxn3-sm{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
+	.mxn4-sm{ margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+	.m0-sm{ margin: 0; }
+	.mt0-sm{ margin-top: 0; }
+	.mr0-sm{ margin-right: 0; }
+	.mb0-sm{ margin-bottom: 0; }
+	.ml0-sm{ margin-left: 0; }
+
+	.m1-sm{ margin: var(--space-1); }
+	.mt1-sm{ margin-top: var(--space-1); }
+	.mr1-sm{ margin-right: var(--space-1); }
+	.mb1-sm{ margin-bottom: var(--space-1); }
+	.ml1-sm{ margin-left: var(--space-1); }
+
+	.m2-sm{ margin: var(--space-2); }
+	.mt2-sm{ margin-top: var(--space-2); }
+	.mr2-sm{ margin-right: var(--space-2); }
+	.mb2-sm{ margin-bottom: var(--space-2); }
+	.ml2-sm{ margin-left: var(--space-2); }
+
+	.m3-sm{ margin: var(--space-3); }
+	.mt3-sm{ margin-top: var(--space-3); }
+	.mr3-sm{ margin-right: var(--space-3); }
+	.mb3-sm{ margin-bottom: var(--space-3); }
+	.ml3-sm{ margin-left: var(--space-3); }
+
+	.m4-sm{ margin: var(--space-4); }
+	.mt4-sm{ margin-top: var(--space-4); }
+	.mr4-sm{ margin-right: var(--space-4); }
+	.mb4-sm{ margin-bottom: var(--space-4); }
+	.ml4-sm{ margin-left: var(--space-4); }
+
+	.mx-auto-sm{ margin-left: auto; margin-right: auto; }
+}
+
+/* Scoped to var(--screen-md) defaults to 90em */
+@media (--screen-md){
+	.mxn1-md{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
+	.mxn2-md{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
+	.mxn3-md{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
+	.mxn4-md{ margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+	.m0-md{ margin: 0; }
+	.mt0-md{ margin-top: 0; }
+	.mr0-md{ margin-right: 0; }
+	.mb0-md{ margin-bottom: 0; }
+	.ml0-md{ margin-left: 0; }
+
+	.m1-md{ margin: var(--space-1); }
+	.mt1-md{ margin-top: var(--space-1); }
+	.mr1-md{ margin-right: var(--space-1); }
+	.mb1-md{ margin-bottom: var(--space-1); }
+	.ml1-md{ margin-left: var(--space-1); }
+
+	.m2-md{ margin: var(--space-2); }
+	.mt2-md{ margin-top: var(--space-2); }
+	.mr2-md{ margin-right: var(--space-2); }
+	.mb2-md{ margin-bottom: var(--space-2); }
+	.ml2-md{ margin-left: var(--space-2); }
+
+	.m3-md{ margin: var(--space-3); }
+	.mt3-md{ margin-top: var(--space-3); }
+	.mr3-md{ margin-right: var(--space-3); }
+	.mb3-md{ margin-bottom: var(--space-3); }
+	.ml3-md{ margin-left: var(--space-3); }
+
+	.m4-md{ margin: var(--space-4); }
+	.mt4-md{ margin-top: var(--space-4); }
+	.mr4-md{ margin-right: var(--space-4); }
+	.mb4-md{ margin-bottom: var(--space-4); }
+	.ml4-md{ margin-left: var(--space-4); }
+
+	.mx-auto-md{ margin-left: auto; margin-right: auto; }
+}
+
+/* Scoped to var(--screen-lg) defaults to 120em */
+@media (--screen-lg){
+	.mxn1-lg{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
+	.mxn2-lg{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
+	.mxn3-lg{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
+	.mxn4-lg{ margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+	.m0-lg{ margin: 0; }
+	.mt0-lg{ margin-top: 0; }
+	.mr0-lg{ margin-right: 0; }
+	.mb0-lg{ margin-bottom: 0; }
+	.ml0-lg{ margin-left: 0; }
+
+	.m1-lg{ margin: var(--space-1); }
+	.mt1-lg{ margin-top: var(--space-1); }
+	.mr1-lg{ margin-right: var(--space-1); }
+	.mb1-lg{ margin-bottom: var(--space-1); }
+	.ml1-lg{ margin-left: var(--space-1); }
+
+	.m2-lg{ margin: var(--space-2); }
+	.mt2-lg{ margin-top: var(--space-2); }
+	.mr2-lg{ margin-right: var(--space-2); }
+	.mb2-lg{ margin-bottom: var(--space-2); }
+	.ml2-lg{ margin-left: var(--space-2); }
+
+	.m3-lg{ margin: var(--space-3); }
+	.mt3-lg{ margin-top: var(--space-3); }
+	.mr3-lg{ margin-right: var(--space-3); }
+	.mb3-lg{ margin-bottom: var(--space-3); }
+	.ml3-lg{ margin-left: var(--space-3); }
+
+	.m4-lg{ margin: var(--space-4); }
+	.mt4-lg{ margin-top: var(--space-4); }
+	.mr4-lg{ margin-right: var(--space-4); }
+	.mb4-lg{ margin-bottom: var(--space-4); }
+	.ml4-lg{ margin-left: var(--space-4); }
+
+	.mx-auto-lg{ margin-left: auto; margin-right: auto; }
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_space-padding.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>/* Non Scoped */
+.p0{ padding: 0; }
+
+.p1{ padding: var(--space-1); }
+.px1{ padding-right: var(--space-1); padding-left: var(--space-1); }
+.py1{ padding-top: var(--space-1); padding-bottom: var(--space-1); }
+
+.p2{ padding: var(--space-2); }
+.px2{ padding-right: var(--space-2); padding-left: var(--space-2); }
+.py2{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+
+.p3{ padding: var(--space-3); }
+.px3{ padding-right: var(--space-3); padding-left: var(--space-3); }
+.py3{ padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+.p4{ padding: var(--space-4); }
+.px4{ padding-right: var(--space-4); padding-left: var(--space-4); }
+.py4{ padding-top: var(--space-4); padding-bottom: var(--space-4); }
+
+/* Scoped to var(--screen-xs) defaults to 30em */
+@media (--screen-xs){
+	.p0-xs{ padding: 0; }
+
+	.p1-xs{ padding: var(--space-1); }
+	.px1-xs{ padding-right: var(--space-1); padding-left: var(--space-1); }
+	.py1-xs{ padding-top: var(--space-1); padding-bottom: var(--space-1); }
+
+	.p2-xs{ padding: var(--space-2); }
+	.px2-xs{ padding-right: var(--space-2); padding-left: var(--space-2); }
+	.py2-xs{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+
+	.p3-xs{ padding: var(--space-3); }
+	.px3-xs{ padding-right: var(--space-3); padding-left: var(--space-3); }
+	.py3-xs{ padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+	.p4-xs{ padding: var(--space-4); }
+	.px4-xs{ padding-right: var(--space-4); padding-left: var(--space-4); }
+	.py4-xs{ padding-top: var(--space-4); padding-bottom: var(--space-4); }
+}
+
+/* Scoped to var(--screen-sm) defaults to 60em */
+@media (--screen-sm){
+	.p0-sm{ padding: 0; }
+
+	.p1-sm{ padding: var(--space-1); }
+	.px1-sm{ padding-right: var(--space-1); padding-left: var(--space-1); }
+	.py1-sm{ padding-top: var(--space-1); padding-bottom: var(--space-1); }
+
+	.p2-sm{ padding: var(--space-2); }
+	.px2-sm{ padding-right: var(--space-2); padding-left: var(--space-2); }
+	.py2-sm{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+
+	.p3-sm{ padding: var(--space-3); }
+	.px3-sm{ padding-right: var(--space-3); padding-left: var(--space-3); }
+	.py3-sm{ padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+	.p4-sm{ padding: var(--space-4); }
+	.px4-sm{ padding-right: var(--space-4); padding-left: var(--space-4); }
+	.py4-sm{ padding-top: var(--space-4); padding-bottom: var(--space-4); }
+}
+
+/* Scoped to var(--screen-md) defaults to 90em */
+@media (--screen-md){
+	.p0-md{ padding: 0; }
+
+	.p1-md{ padding: var(--space-1); }
+	.px1-md{ padding-right: var(--space-1); padding-left: var(--space-1); }
+	.py1-md{ padding-top: var(--space-1); padding-bottom: var(--space-1); }
+
+	.p2-md{ padding: var(--space-2); }
+	.px2-md{ padding-right: var(--space-2); padding-left: var(--space-2); }
+	.py2-md{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+
+	.p3-md{ padding: var(--space-3); }
+	.px3-md{ padding-right: var(--space-3); padding-left: var(--space-3); }
+	.py3-md{ padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+	.p4-md{ padding: var(--space-4); }
+	.px4-md{ padding-right: var(--space-4); padding-left: var(--space-4); }
+	.py4-md{ padding-top: var(--space-4); padding-bottom: var(--space-4); }
+}
+
+/* Scoped to var(--screen-lg) defaults to 120em */
+@media (--screen-lg){
+	.p0-lg{ padding: 0; }
+
+	.p1-lg{ padding: var(--space-1); }
+	.px1-lg{ padding-right: var(--space-1); padding-left: var(--space-1); }
+	.py1-lg{ padding-top: var(--space-1); padding-bottom: var(--space-1); }
+
+	.p2-lg{ padding: var(--space-2); }
+	.px2-lg{ padding-right: var(--space-2); padding-left: var(--space-2); }
+	.py2-lg{ padding-top: var(--space-2); padding-bottom: var(--space-2); }
+
+	.p3-lg{ padding: var(--space-3); }
+	.px3-lg{ padding-right: var(--space-3); padding-left: var(--space-3); }
+	.py3-lg{ padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+	.p4-lg{ padding: var(--space-4); }
+	.px4-lg{ padding-right: var(--space-4); padding-left: var(--space-4); }
+	.py4-lg{ padding-top: var(--space-4); padding-bottom: var(--space-4); }
+}
+</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&ltdiv class="bg-navy"&gt;
+	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
+	&lt;div class="border border--red"&gt;
+	...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">Layout</h2>
+			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_layout-borders.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>.border{ border-width: var(--border-width); border-style: var(--border-style); }
+.border-top{ border-top: var(--border-width) var(--border-style); }
+.border-left{ border-left: var(--border-width) var(--border-style); }
+.border-bottom{ border-bottom: var(--border-width) var(--border-style); }
+.border-right{ border-right: var(--border-width) var(--border-style); }
+
+.border-rounded{ border-radius: var(--border-radius); }
+.border-circle{ border-radius: 50%; }</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_layout-utils.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>.inline{ display: inline; }
+.block{ display: block; }
+.inline-block{ display: inline-block; }
+.table{ display: table; }
+.table-cell{ display: table-cell; }
+
+/* Box Sizing */
+.border-box{ box-sizing: border-box; }
+
+/* Floats */
+.float-left{ float: left; }
+.float-none{ float: none; }
+.float-right{ float: right; }
+
+/* Clearing
+@link http://nicolasgallagher.com/micro-clearfix-hack */
+.clearfix:before,
+.clearfix:after{
+	content: '';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_layout-flex.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>.flex{ display: flex; }
+@media (--screen-xs){
+	.flex-xs{ display: flex; }
+}
+@media (--screen-sm) {
+	.flex-sm{ display: flex; }
+}
+@media (--screen-md) {
+	.flex-md{ display: flex; }
+}
+@media (--screen-lg) {
+	.flex-lg{ display: flex; }
+}
+
+.flex-column{ flex-direction: column; }
+.flex-wrap{ flex-wrap: wrap; }
+
+.flex-center{ align-items: center; }
+.flex-middle{ justify-content: center; text-align: center; }
+
+.flex-baseline{ align-items: baseline; }
+.flex-stretch{ align-items: stretch; }
+.flex-start{ align-items: flex-start; }
+.flex-end{ align-items: flex-end; }
+
+.flex-justify{ justify-content: space-between; }
+
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+.flex-grow{ flex: 1 0 auto; }
+.flex-none{ flex: none; }
+
+.flex-first{ order: -1; }
+.flex-last{ order: 99999; }</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_layout-hides.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>.hide{ display: none; }
+
+@media (--screen-xs){
+	.hide-xs{ display: none; }
+}
+
+@media (--screen-sm){
+	.hide-sm{ display: none; }
+}
+
+@media (--screen-md){
+	.hide-md{ display: none; }
+}
+
+@media (--screen-lg){
+	.hide-lg{ display: none; }
+}
+
+/* Use this class for hiding things to be read for screen readers */
+.hide-sr{
+	display: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<h2 class="mt2-sm mb2-sm type-center">Grid</h2>
+			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_grid.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>.container{
+	max-width: var(--container-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col{ float: left; box-sizing: border-box; }
+
+.col-1{ width: calc(1/12 * 100%); }
+
+.col-2{ width: calc(2/12 * 100%); }
+
+.col-3{ width: calc(3/12 * 100%); }
+
+.col-4{ width: calc(4/12 * 100%); }
+
+.col-5{ width: calc(5/12 * 100%); }
+
+.col-6{ width: calc(6/12 * 100%); }
+
+.col-7{ width: calc(7/12 * 100%); }
+
+.col-8{ width: calc(8/12 * 100%); }
+
+.col-9{ width: calc(9/12 * 100%); }
+
+.col-10{ width: calc(10/12 * 100%); }
+
+.col-11{ width: calc(11/12 * 100%); }
+
+.col-12{ width: 100%; }
+</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_grid-xs.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>@media (--screen-xs){
+	.col-xs{ float: left; box-sizing: border-box; }
+
+	.col-1-xs{ width: calc(1/12 * 100%); }
+
+	.col-2-xs{ width: calc(2/12 * 100%); }
+
+	.col-3-xs{ width: calc(3/12 * 100%); }
+
+	.col-4-xs{ width: calc(4/12 * 100%); }
+
+	.col-5-xs{ width: calc(5/12 * 100%); }
+
+	.col-6-xs{ width: calc(6/12 * 100%); }
+
+	.col-7-xs{ width: calc(7/12 * 100%); }
+
+	.col-8-xs{ width: calc(8/12 * 100%); }
+
+	.col-9-xs{ width: calc(9/12 * 100%); }
+
+	.col-10-xs{ width: calc(10/12 * 100%); }
+
+	.col-11-xs{ width: calc(11/12 * 100%); }
+
+	.col-12-xs{ width: 100%; }
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_grid-sm.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>@media (--screen-sm){
+	.col-sm{ float: left; box-sizing: border-box; }
+
+	.col-1-sm{ width: calc(1/12 * 100%); }
+
+	.col-2-sm{ width: calc(2/12 * 100%); }
+
+	.col-3-sm{ width: calc(3/12 * 100%); }
+
+	.col-4-sm{ width: calc(4/12 * 100%); }
+
+	.col-5-sm{ width: calc(5/12 * 100%); }
+
+	.col-6-sm{ width: calc(6/12 * 100%); }
+
+	.col-7-sm{ width: calc(7/12 * 100%); }
+
+	.col-8-sm{ width: calc(8/12 * 100%); }
+
+	.col-9-sm{ width: calc(9/12 * 100%); }
+
+	.col-10-sm{ width: calc(10/12 * 100%); }
+
+	.col-11-sm{ width: calc(11/12 * 100%); }
+
+	.col-12-sm{ width: 100%; }
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_grid-md.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>@media (--screen-md){
+	.col-md{ float: left; box-sizing: border-box; }
+
+	.col-1-md{ width: calc(1/12 * 100%); }
+
+	.col-2-md{ width: calc(2/12 * 100%); }
+
+	.col-3-md{ width: calc(3/12 * 100%); }
+
+	.col-4-md{ width: calc(4/12 * 100%); }
+
+	.col-5-md{ width: calc(5/12 * 100%); }
+
+	.col-6-md{ width: calc(6/12 * 100%); }
+
+	.col-7-md{ width: calc(7/12 * 100%); }
+
+	.col-8-md{ width: calc(8/12 * 100%); }
+
+	.col-9-md{ width: calc(9/12 * 100%); }
+
+	.col-10-md{ width: calc(10/12 * 100%); }
+
+	.col-11-md{ width: calc(11/12 * 100%); }
+
+	.col-12-md{ width: 100%; }
+}s</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+				</div>
+			</section>
+
+			<div class="clearfix flex flex-center">
+				<div class="col col-7 px2-sm mx-auto">
+					<h3 class="type-center">src/_grid-lg.css</h3>
+					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">.css</h3>
+					<pre class="border border--silver p1">
+<code>@media (--screen-lg){
+	.col-lg{ float: left; box-sizing: border-box; }
+
+	.col-1-lg{ width: calc(1/12 * 100%); }
+
+	.col-2-lg{ width: calc(2/12 * 100%); }
+
+	.col-3-lg{ width: calc(3/12 * 100%); }
+
+	.col-4-lg{ width: calc(4/12 * 100%); }
+
+	.col-5-lg{ width: calc(5/12 * 100%); }
+
+	.col-6-lg{ width: calc(6/12 * 100%); }
+
+	.col-7-lg{ width: calc(7/12 * 100%); }
+
+	.col-8-lg{ width: calc(8/12 * 100%); }
+
+	.col-9-lg{ width: calc(9/12 * 100%); }
+
+	.col-10-lg{ width: calc(10/12 * 100%); }
+
+	.col-11-lg{ width: calc(11/12 * 100%); }
+
+	.col-12-lg{ width: 100%; }
+}</code>
+					</pre>
+				</div>
+				<div class="col col-6 px2-sm">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre class="border border--silver p1"><code>&lt;body&gt;
+	...
+&lt;/body&gt;
+
+&lt;h4&gt;What color is this?&lt;/h4&gt;
+
+&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
 				</div>
 			</section>
 			
