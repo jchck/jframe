@@ -1,9 +1,11 @@
 :root{
 	--light-blue: #279aff;
 }
-pre{
-	background-color: var(--light-blue);
-}
+
+
+
+pre{ background-color: var(--light-blue) }
+.bg-light-blue{ background-color: var(--light-blue) }
 
 @media(--screen-sm){
 	.main{ 
