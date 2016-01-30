@@ -29,4 +29,5 @@
 @import '_transitions';
 
 /* Site Specific Styles */
+@import 'prism.css';
 @import 'site.css'
