@@ -1300,11 +1300,11 @@ a:hover{ color: var(--link-hover-color); }</code>
 			</section>
 
 			<h2 id="transitions" class="mt2-sm mb2-sm type-center">Transitions</h2>
-			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
+			<p class="h3">Add a touch of class to page elements with these transistion utility classes.</p>
 			<div class="clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_transitions.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p>Attach the transistion class to the unchanged element to set the type of and speed of transistion to the changed state.</p>
 				</div>
 			</div>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
@@ -1318,18 +1318,12 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre><code class="language-html">&lt;body&gt;
-	...
-&lt;/body&gt;
-
-&lt;h4&gt;What color is this?&lt;/h4&gt;
-
-&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+					<pre><code class="language-html">&lt;a class="ease-in-out" href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
 				</div>
 			</section>
 
 			<h2 id="site" class="mt2-sm mb2-sm type-center">Unique Site Styles</h2>
-			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
+			<p class="h3">Include styles unique to the project at hand here. Ideally, styles defined here are not defined elsewhere in the project and they are kept as reuseable as possible.</p>
 			<div class="clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/site.css</h3>
@@ -1340,7 +1334,14 @@ a:hover{ color: var(--link-hover-color); }</code>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
 					<pre>
-<code class="language-css">@media(--screen-sm){
+<code class="language-css">:root{
+	--light-blue: #279aff;
+}
+
+pre{ background-color: var(--light-blue) }
+.bg-light-blue{ background-color: var(--light-blue) }
+
+@media(--screen-sm){
 	.main{ 
 		margin-left: 12rem; 
 	}
@@ -1352,17 +1353,37 @@ a:hover{ color: var(--link-hover-color); }</code>
 		bottom: 0; 
 		left: 0;
 	}
+}
+
+h1 .small{ 
+	font-size: 40%; 
+	color: var(--gray);
+}
+
+.nav a{ text-decoration: none }
+.nav a:hover{ background-color: #fff }
+
+.twitter{ 
+	bottom: 0; 
+	left: calc(4/12 * 100%); 
 }</code></pre>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre><code class="language-html">&lt;body&gt;
-	...
+					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charet="utf8"&gt;
+	&lt;title&gt;jframe&lt;/title&gt;
+	&lt;meta title="description" content="delightfully simple scalable css"&gt;
+	&lt;meta title="author" content="Justin Chick"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- your code goes here --&gt;
 &lt;/body&gt;
-
-&lt;h4&gt;What color is this?&lt;/h4&gt;
-
-&lt;a href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
+&lt;/html&gt;</code></pre>
 				</div>
 			</section>
 			
