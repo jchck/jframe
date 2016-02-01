@@ -24,7 +24,7 @@
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">index.html</h3>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray  p1"><code>&lt;!DOCTYPE html&gt;
+					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 	&lt;meta charet="utf8"&gt;
@@ -45,7 +45,7 @@
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/jFrame.css</h3>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>/* jFrame Styles */
+					<pre><code class="language-css">/* jFrame Styles */
 @import 'colors.css/myth/variables.css';
 @import '_variables';
 
@@ -76,7 +76,9 @@
 @import '_transitions';
 
 /* Site Specific Styles */
-@import 'site.css'</code></pre>
+@import 'prism.css';
+@import 'site.css';</code>
+					</pre>
 				</div>
 			</section>
 
@@ -84,7 +86,7 @@
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_variables.css</h3>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>:root {
+					<pre><code class="language-css">:root {
   /* Type */
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
   --line-height: 1.5;
@@ -152,7 +154,7 @@
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_media-queries.css</h3>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>@custom-media --screen-xs (min-width: 30em);
+					<pre><code class="language-css">@custom-media --screen-xs (min-width: 30em);
 @custom-media --screen-sm (min-width: 60em);
 @custom-media --screen-md (min-width: 90em);
 @custom-media --screen-lg (min-width: 120em);</code></pre>
@@ -163,7 +165,7 @@
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_reset.css</h3>
 					<p>The simple reset from <a href="http://basscss.com"target="_blank">Basscss</a>. For much deeper cross browser consistency include <a href="#" target="_blank">Normalize.css</a>.</p>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>body { margin: 0; }
+					<pre><code class="language-css">body { margin: 0; }
 img { width: 100%; }
 svg { max-height: 100%; }</code></pre>
 				</div>
@@ -180,8 +182,7 @@ svg { max-height: 100%; }</code></pre>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>body{
+					<pre><code class="language-css">body{
 	font-family: var(--font-family);
 	line-height: var(--line-height);
 	font-size: var(--body-font-size);
@@ -222,8 +223,8 @@ dl, ol, ul{
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;
+					<pre>
+<code class="language-html">&lt;p&gt;Lorem ipsum...&lt;/p&gt;
 
 &lt;h1&gt;heading 1&lt;h1&gt;
 &lt;h2&gt;heading 2&lt;/h2&gt;
@@ -249,8 +250,8 @@ dl, ol, ul{
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>/* Alignments */
+					<pre>
+<code class="language-css">/* Alignments */
 .type-left{ text-align: left; }
 .type-center{ text-align: center; }
 .type-right{ text-align: right; }
@@ -267,8 +268,8 @@ dl, ol, ul{
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>&lt;h1 class="type-left"&gt;heading 1&lt;h1&gt;
+					<pre>
+<code class="language-html">&lt;h1 class="type-left"&gt;heading 1&lt;h1&gt;
 &lt;h2 class="type-center"&gt;heading 2&lt;/h2&gt;
 &lt;h3 class="type-right"&gt;heading 3&lt;/h3&gt;
 &lt;p class="type-justify"&gt;Lorem ipsum...&lt;/p&gt;
@@ -292,8 +293,8 @@ dl, ol, ul{
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>pre{
+					<pre>
+<code class="language-css">pre{
 	max-height: var(--pre-max-height);
 	overflow-x: scroll;
 }
@@ -306,8 +307,8 @@ code{
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>&lt;pre&gt;
+					<pre>
+<code class="language-html">&lt;pre&gt;
 	&lt;code&gt;
 	...
 	&lt;/code&gt;
@@ -327,8 +328,8 @@ code{
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>body{
+					<pre>
+<code class="language-css">body{
 	background: var(--body-background-color);
 	color: var(--body-color);
 }
@@ -341,7 +342,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -360,8 +361,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>/* Backgrounds */
+					<pre>
+<code class="language-css">/* Backgrounds */
 
 .bg-navy {    background-color: var(--navy);    }
 .bg-blue {    background-color: var(--blue);    }
@@ -471,7 +472,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&ltdiv class="bg-navy"&gt;
+					<pre><code class="language-html">&ltdiv class="bg-navy"&gt;
 	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
 	&lt;div class="border border--red"&gt;
 	...
@@ -491,8 +492,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>/* Non Scoped */
+					<pre>
+<code class="language-css">/* Non Scoped */
 .mxn1{ margin-left: -var(--space-1); margin-right: -var(--space-1); }
 .mxn2{ margin-left: -var(--space-2); margin-right: -var(--space-2); }
 .mxn3{ margin-left: -var(--space-3); margin-right: -var(--space-3); }
@@ -693,7 +694,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -712,8 +713,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>/* Non Scoped */
+					<pre>
+<code class="language-css">/* Non Scoped */
 .p0{ padding: 0; }
 
 .p1{ padding: var(--space-1); }
@@ -820,7 +821,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&ltdiv class="bg-navy"&gt;
+					<pre><code class="language-html">&ltdiv class="bg-navy"&gt;
 	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
 	&lt;div class="border border--red"&gt;
 	...
@@ -840,8 +841,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.border{ border-width: var(--border-width); border-style: var(--border-style); }
+					<pre>
+<code class="language-css">.border{ border-width: var(--border-width); border-style: var(--border-style); }
 .border-top{ border-top: var(--border-width) var(--border-style); }
 .border-left{ border-left: var(--border-width) var(--border-style); }
 .border-bottom{ border-bottom: var(--border-width) var(--border-style); }
@@ -853,7 +854,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -872,8 +873,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.inline{ display: inline; }
+					<pre>
+<code class="language-css">.inline{ display: inline; }
 .block{ display: block; }
 .inline-block{ display: inline-block; }
 .table{ display: table; }
@@ -901,7 +902,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -920,8 +921,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.flex{ display: flex; }
+					<pre>
+<code class="language-css">.flex{ display: flex; }
 @media (--screen-xs){
 	.flex-xs{ display: flex; }
 }
@@ -962,7 +963,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -981,8 +982,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.hide{ display: none; }
+					<pre>
+<code class="language-css">.hide{ display: none; }
 
 @media (--screen-xs){
 	.hide-xs{ display: none; }
@@ -1012,7 +1013,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1033,8 +1034,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.container{
+					<pre>
+<code class="language-css">.container{
 	max-width: var(--container-width);
 	margin-left: auto;
 	margin-right: auto;
@@ -1070,7 +1071,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1089,8 +1090,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>@media (--screen-xs){
+					<pre>
+<code class="language-css">@media (--screen-xs){
 	.col-xs{ float: left; box-sizing: border-box; }
 
 	.col-1-xs{ width: calc(1/12 * 100%); }
@@ -1121,7 +1122,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1140,8 +1141,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>@media (--screen-sm){
+					<pre>
+<code class="language-css">@media (--screen-sm){
 	.col-sm{ float: left; box-sizing: border-box; }
 
 	.col-1-sm{ width: calc(1/12 * 100%); }
@@ -1172,7 +1173,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-css">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1191,8 +1192,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>@media (--screen-md){
+					<pre>
+<code class="language-css">@media (--screen-md){
 	.col-md{ float: left; box-sizing: border-box; }
 
 	.col-1-md{ width: calc(1/12 * 100%); }
@@ -1223,7 +1224,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-css">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1242,8 +1243,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>@media (--screen-lg){
+					<pre>
+<code class="language-css">@media (--screen-lg){
 	.col-lg{ float: left; box-sizing: border-box; }
 
 	.col-1-lg{ width: calc(1/12 * 100%); }
@@ -1274,7 +1275,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1295,15 +1296,15 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>.ease{ transition: all var(--transition-speed) ease; }
+					<pre>
+<code class="language-css">.ease{ transition: all var(--transition-speed) ease; }
 .ease-in{ transition: all var(--transition-speed) ease-in; }
 .ease-in-out{ transition: all var(--transition-speed) ease-in-out; }
 .ease-out{ transition: all var(--transition-speed) ease-out; }</code></pre>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1324,8 +1325,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">.css</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1">
-<code>@media(--screen-sm){
+					<pre>
+<code class="language-css">@media(--screen-sm){
 	.main{ 
 		margin-left: 12rem; 
 	}
@@ -1341,7 +1342,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				</div>
 				<div class="col col-6 px2-sm">
 					<h3 class="type-center">&lt;html&gt;</h3>
-					<pre style="border-color: #aaa" class="border-top border-left border--gray p1"><code>&lt;body&gt;
+					<pre><code class="language-html">&lt;body&gt;
 	...
 &lt;/body&gt;
 
@@ -1364,8 +1365,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 				<li><a class="block p2 ease" href="#site">Unique Site Styles</a></li>
 			</ul>
 			<div class="twitter mb3" style="position: absolute">
-				<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="jchck_" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				
 			</div>
 		</nav>
 	</main>
