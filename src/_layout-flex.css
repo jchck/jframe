@@ -1,15 +1,23 @@
-.flex{ display: flex; }
+.flex-xs,
+.flex-sm,
+.flex-md,
+.flex-lg{
+	display: flex;
+}
+.flex{
+	display: flex;
+}
 @media (--screen-xs){
-	.flex-xs{ display: flex; }
+	.flex-xs{ display: block }
 }
 @media (--screen-sm) {
-	.flex-sm{ display: flex; }
+	.flex-sm{ display: block }
 }
 @media (--screen-md) {
-	.flex-md{ display: flex; }
+	.flex-md{ display: block }
 }
 @media (--screen-lg) {
-	.flex-lg{ display: flex; }
+	.flex-lg{ display: block }
 }
 
 .flex-column{ flex-direction: column; }
