@@ -37,6 +37,6 @@
  */
 
 @custom-media --screen-xs (min-width: 30em);
-@custom-media --screen-sm (min-width: 60em);
-@custom-media --screen-md (min-width: 90em);
-@custom-media --screen-lg (min-width: 120em);
+@custom-media --screen-sm (min-width: 40em);
+@custom-media --screen-md (min-width: 60em);
+@custom-media --screen-lg (min-width: 90em);
