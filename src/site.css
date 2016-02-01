@@ -21,6 +21,11 @@ pre{ background-color: var(--light-blue) }
 	}
 }
 
+h1 .small{ 
+	font-size: 40%; 
+	color: var(--gray);
+}
+
 .nav a{ text-decoration: none }
 .nav a:hover{ background-color: #fff }
 
