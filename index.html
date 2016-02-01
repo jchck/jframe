@@ -21,8 +21,8 @@
 			<h2 id="start" class="mt2-sm mb2-sm type-center">Getting Started</h2>
 			<p class="h3">jFrame is an object oriented CSS toolkit designed to help you and your team write better and easier to maintain CSS by writing less of it. This is a library of single purpose CSS classes focused on extensibility, flexibility, and reuseability. Don't get lost in the cascase, make better sense of it.</p>
 			<p>Note: This project is still very much in constant development, if you find any bugs (as you likely will) please submit a <a href="https://github.com/jchck/jframe" target="_blank"> pull request</a>.</p>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+			<section class="py2 mxn2-sm clearfix flex flex-middle">
+				<div class="col col-10-xs col-7-sm px2-sm">
 					<h3 class="type-center">index.html</h3>
 					<p>Dafault html page template. Hopefully nothing too ground breaking here.</p>
 					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -42,8 +42,8 @@
 				</div>
 			</section>
 
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+			<section class="py2 mxn2-sm clearfix flex flex-middle">
+				<div class="col col-10-xs col-7-sm px2-sm">
 					<h3 class="type-center">src/jFrame.css</h3>
 					<p>jFrame's main import file grabs all of our partials and concatenates them. Use them all or take out what you don't need, dealers choice.</p>
 					<pre><code class="language-css">/* jFrame Styles */
@@ -83,8 +83,8 @@
 				</div>
 			</section>
 
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+			<section class="py2 mxn2-sm clearfix flex flex-middle">
+				<div class="col col-10-xs col-7-sm px2-sm">
 					<h3 class="type-center">src/_variables.css</h3>
 					<p>Flexiable and unopinionated by default. Don't like the included type scale? Go on and make it your own.</p>
 					<p>Variable names are also kept close to their intended use so you can spend less time looking up variables and more time doing what you love most.</p>
@@ -152,8 +152,8 @@
 				</div>
 			</section>
 
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+			<section class="py2 mxn2-sm clearfix flex flex-middle">
+				<div class="col col-10-xs col-7-sm px2-sm">
 					<h3 class="type-center">src/_media-queries.css</h3>
 					<p>All media queries are written mobile first. Don't be shy about adjusting these (or adding more) to match your content, not the other way around.</p>
 					<p>The <a href="https://github.com/postcss/gulp-postcss" target="_blank">Gulp-PostCSS</a> build process will collect and order all queries so you just put them where ever makes sense to you. If a computer can do it why should we?</p>
@@ -164,8 +164,8 @@
 				</div>
 			</section>
 
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-middle">
+				<div class="col col-10-xs col-7-sm px2-sm">
 					<h3 class="type-center">src/_reset.css</h3>
 					<p>The base reset from <a href="http://www.basscss.com/docs/base-reset/"target="_blank">Basscss</a>. To normalize styles for cross browser differences you'll have to install <a href="#" target="_blank">Normalize.css</a> and add the appropriate <code>@import</code> in src/jFrame.css.</p>
 					<p><kbd>$ npm install normalize.css</kbd></p>
@@ -255,8 +255,8 @@ dl, ol, ul{
 					<p>Typographic utilities for text alignments, font weight, and text tranfermations</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">/* Alignments */
@@ -274,7 +274,7 @@ dl, ol, ul{
 .capitalize{ text-transform: capitalize; letter-spacing: .1em; }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre>
 <code class="language-html">&lt;h1 class="type-left"&gt;heading 1&lt;h1&gt;
@@ -298,8 +298,8 @@ dl, ol, ul{
 					<p>Basic code block styles.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">pre{
@@ -313,7 +313,7 @@ code{
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre>
 <code class="language-html">&lt;pre&gt;
@@ -333,8 +333,8 @@ code{
 					<p>Setup out base colors for background and text color as well as heading, link, and link:hover colors.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">body{
@@ -348,7 +348,7 @@ a{ color: var(--link-color); }
 a:hover{ color: var(--link-hover-color); }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 
@@ -369,8 +369,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>See <a href="http://clrs.cc/" target="_blank">colors.css</a> for a detailed look at all the colors, color utilities, and examples for use included here.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">/* Backgrounds */
@@ -481,7 +481,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 </code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&ltdiv class="bg-navy"&gt;
 	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
@@ -503,8 +503,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>First, negative margins are provided along the X (left to right) axis only. Use these to adjust for container padding inside the grid. Next, margin classes allow us to reset all margins or add them based on the scale defined in src/_variables.css. And finally we have a left/right margin auto class to center bloc elements within their parent container.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">/* Non Scoped */
@@ -706,7 +706,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -724,8 +724,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>As with margin classes, these padding classes are also scoped to media query. Note how every padding class comes with definations for sizes along both the X and Y axis. This is to encourage visual rythem through out.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">/* Non Scoped */
@@ -833,7 +833,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 </code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&ltdiv class="bg-navy"&gt;
 	&lt;h1 class="blue"&gt;A Blue Heading With Navy Background&lt;/h1&gt;
@@ -852,8 +852,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>Add borders to block level elements, set border radius base, and give us a class to make circles. You know the drill.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.border{ border-width: var(--border-width); border-style: var(--border-style); }
@@ -866,7 +866,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 .border-circle{ border-radius: 50%; }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -884,8 +884,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>Display utilities, turn on box-sizing: border-box (we don't do this at root like most), and everyone's favorite <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">clearfix hack</a>.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.inline{ display: inline; }
@@ -914,7 +914,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -933,8 +933,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>Be sure to check if the browsers your project needs to support has <a href="http://caniuse.com/#search=flex" target="_blank">flexbox support</a>.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.flex{ display: flex; }
@@ -976,7 +976,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 .flex-last{ order: 99999; }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -994,8 +994,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>Hide elements on the page as appropriate.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.hide{ display: none; }
@@ -1026,7 +1026,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -1046,8 +1046,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.container{
@@ -1084,7 +1084,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 </code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -1102,8 +1102,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">@media (--screen-xs){
@@ -1135,7 +1135,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -1153,8 +1153,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">@media (--screen-sm){
@@ -1186,7 +1186,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-css">&lt;body&gt;
 	...
@@ -1204,8 +1204,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">@media (--screen-md){
@@ -1237,7 +1237,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-css">&lt;body&gt;
 	...
@@ -1255,8 +1255,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">@media (--screen-lg){
@@ -1288,7 +1288,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 }</code>
 					</pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;body&gt;
 	...
@@ -1308,8 +1308,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>Attach the transistion class to the unchanged element to set the type of and speed of transistion to the changed state.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">.ease{ transition: all var(--transition-speed) ease; }
@@ -1317,7 +1317,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 .ease-in-out{ transition: all var(--transition-speed) ease-in-out; }
 .ease-out{ transition: all var(--transition-speed) ease-out; }</code></pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;a class="ease-in-out" href="google.com"&gt;A Link&lt;/a&gt;</code></pre>
 				</div>
@@ -1331,8 +1331,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
-			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
-				<div class="col col-6 px2-sm">
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">.css</h3>
 					<pre>
 <code class="language-css">:root{
@@ -1369,7 +1369,7 @@ h1 .small{
 	left: calc(4/12 * 100%); 
 }</code></pre>
 				</div>
-				<div class="col col-6 px2-sm">
+				<div class="col col-10 col-6-sm px2">
 					<h3 class="type-center">&lt;html&gt;</h3>
 					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
