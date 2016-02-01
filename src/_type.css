@@ -31,6 +31,8 @@ p{
 	margin-bottom: var(--p-margin-bottom);
 }
 
+.small{ font-size: 75%; }
+
 dl, ol, ul{
 	margin-top: var(--list-margin-top);
 	margin-bottom: var(--list-margin-bottom);
