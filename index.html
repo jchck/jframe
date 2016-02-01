@@ -22,9 +22,9 @@
 			<p class="h3">jFrame is an object oriented CSS toolkit designed to help you and your team write better and easier to maintain CSS by writing less of it. This is a library of single purpose CSS classes focused on extensibility, flexibility, and reuseability. Don't get lost in the cascase, make better sense of it.</p>
 			<p>Note: This project is still very much in constant development, if you find any bugs (as you likely will) please submit a <a href="https://github.com/jchck/jframe" target="_blank"> pull request</a>.</p>
 			<section class="py2 mxn2-sm clearfix flex flex-middle">
-				<div class="col col-10-xs col-7-sm px2-sm">
+				<div class="col col-10 col-7-sm px2-sm">
 					<h3 class="type-center">index.html</h3>
-					<p>Dafault html page template. Hopefully nothing too ground breaking here.</p>
+					<p class="px2">Dafault html page template. Hopefully nothing too ground breaking here.</p>
 					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -43,9 +43,9 @@
 			</section>
 
 			<section class="py2 mxn2-sm clearfix flex flex-middle">
-				<div class="col col-10-xs col-7-sm px2-sm">
+				<div class="col col-10 col-7-sm px2-sm">
 					<h3 class="type-center">src/jFrame.css</h3>
-					<p>jFrame's main import file grabs all of our partials and concatenates them. Use them all or take out what you don't need, dealers choice.</p>
+					<p class="px2">jFrame's main import file grabs all of our partials and concatenates them. Use them all or take out what you don't need, dealers choice.</p>
 					<pre><code class="language-css">/* jFrame Styles */
 @import 'colors.css/myth/variables.css';
 @import '_variables';
@@ -84,10 +84,10 @@
 			</section>
 
 			<section class="py2 mxn2-sm clearfix flex flex-middle">
-				<div class="col col-10-xs col-7-sm px2-sm">
+				<div class="col col-10 col-7-sm px2-sm">
 					<h3 class="type-center">src/_variables.css</h3>
-					<p>Flexiable and unopinionated by default. Don't like the included type scale? Go on and make it your own.</p>
-					<p>Variable names are also kept close to their intended use so you can spend less time looking up variables and more time doing what you love most.</p>
+					<p class="px2">Flexiable and unopinionated by default. Don't like the included type scale? Go on and make it your own.</p>
+					<p class="px2">Variable names are also kept close to their intended use so you can spend less time looking up variables and more time doing what you love most.</p>
 					<pre><code class="language-css">:root {
   /* Type */
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -153,10 +153,10 @@
 			</section>
 
 			<section class="py2 mxn2-sm clearfix flex flex-middle">
-				<div class="col col-10-xs col-7-sm px2-sm">
+				<div class="col col-10 col-7-sm px2-sm">
 					<h3 class="type-center">src/_media-queries.css</h3>
-					<p>All media queries are written mobile first. Don't be shy about adjusting these (or adding more) to match your content, not the other way around.</p>
-					<p>The <a href="https://github.com/postcss/gulp-postcss" target="_blank">Gulp-PostCSS</a> build process will collect and order all queries so you just put them where ever makes sense to you. If a computer can do it why should we?</p>
+					<p class="px2">All media queries are written mobile first. Don't be shy about adjusting these (or adding more) to match your content, not the other way around.</p>
+					<p class="px2">The <a href="https://github.com/postcss/gulp-postcss" target="_blank">Gulp-PostCSS</a> build process will collect and order all queries so you just put them where ever makes sense to you. If a computer can do it why should we?</p>
 					<pre><code class="language-css">@custom-media --screen-xs (min-width: 30em);
 @custom-media --screen-sm (min-width: 60em);
 @custom-media --screen-md (min-width: 90em);
@@ -165,10 +165,10 @@
 			</section>
 
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-middle">
-				<div class="col col-10-xs col-7-sm px2-sm">
+				<div class="col col-10 col-7-sm px2-sm">
 					<h3 class="type-center">src/_reset.css</h3>
-					<p>The base reset from <a href="http://www.basscss.com/docs/base-reset/"target="_blank">Basscss</a>. To normalize styles for cross browser differences you'll have to install <a href="#" target="_blank">Normalize.css</a> and add the appropriate <code>@import</code> in src/jFrame.css.</p>
-					<p><kbd>$ npm install normalize.css</kbd></p>
+					<p class="px2">The base reset from <a href="http://www.basscss.com/docs/base-reset/"target="_blank">Basscss</a>. To normalize styles for cross browser differences you'll have to install <a href="#" target="_blank">Normalize.css</a> and add the appropriate <code>@import</code> in src/jFrame.css.</p>
+					<p class="px2"><kbd>$ npm install normalize.css</kbd></p>
 					<pre><code class="language-css">body { margin: 0; }
 img { width: 100%; }
 svg { max-height: 100%; }</code></pre>
@@ -178,9 +178,9 @@ svg { max-height: 100%; }</code></pre>
 			<h2 id="type" class="mt2-sm mb2-sm type-center">Typography</h2>
 			<p class="h3">Section intro. Lorem ipsum Commodo velit minim fugiat anim Duis id ex tion mollit sint et minim sit officia sed sint occaecat et.</p>
 			<div class="clearfix flex flex-center">
-				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+				<div class="col col-10 col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_type.css</h3>
-					<p>Set up the base typographic styles: font stacks, line height, size, and margins. Don't forget to choose a <a href="http://webtypography.net/2.1.2" target="_blank">comfortable measure</a> for your font size/font family combo.</p>
+					<p class="px2">Set up the base typographic styles: font stacks, line height, size, and margins. Don't forget to choose a <a href="http://webtypography.net/2.1.2" target="_blank">comfortable measure</a> for your font size/font family combo.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -252,7 +252,7 @@ dl, ol, ul{
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_type-utils.css</h3>
-					<p>Typographic utilities for text alignments, font weight, and text tranfermations</p>
+					<p class="px2">Typographic utilities for text alignments, font weight, and text tranfermations</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -295,7 +295,7 @@ dl, ol, ul{
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_type-code.css</h3>
-					<p>Basic code block styles.</p>
+					<p class="px2">Basic code block styles.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -330,7 +330,7 @@ code{
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_colors.css</h3>
-					<p>Setup out base colors for background and text color as well as heading, link, and link:hover colors.</p>
+					<p class="px2">Setup out base colors for background and text color as well as heading, link, and link:hover colors.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -366,7 +366,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">colors.css</h3>
-					<p>See <a href="http://clrs.cc/" target="_blank">colors.css</a> for a detailed look at all the colors, color utilities, and examples for use included here.</p>
+					<p class="px2">See <a href="http://clrs.cc/" target="_blank">colors.css</a> for a detailed look at all the colors, color utilities, and examples for use included here.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -499,8 +499,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_space-margin.css</h3>
-					<p>Classes are also scoped to specific media queries to make adjustments at various screen widths a breeze.</p>
-					<p>First, negative margins are provided along the X (left to right) axis only. Use these to adjust for container padding inside the grid. Next, margin classes allow us to reset all margins or add them based on the scale defined in src/_variables.css. And finally we have a left/right margin auto class to center bloc elements within their parent container.</p>
+					<p class="px2">Classes are also scoped to specific media queries to make adjustments at various screen widths a breeze.</p>
+					<p class="px2">First, negative margins are provided along the X (left to right) axis only. Use these to adjust for container padding inside the grid. Next, margin classes allow us to reset all margins or add them based on the scale defined in src/_variables.css. And finally we have a left/right margin auto class to center bloc elements within their parent container.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -721,7 +721,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_space-padding.css</h3>
-					<p>As with margin classes, these padding classes are also scoped to media query. Note how every padding class comes with definations for sizes along both the X and Y axis. This is to encourage visual rythem through out.</p>
+					<p class="px2">As with margin classes, these padding classes are also scoped to media query. Note how every padding class comes with definations for sizes along both the X and Y axis. This is to encourage visual rythem through out.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -849,7 +849,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_layout-borders.css</h3>
-					<p>Add borders to block level elements, set border radius base, and give us a class to make circles. You know the drill.</p>
+					<p class="px2">Add borders to block level elements, set border radius base, and give us a class to make circles. You know the drill.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -881,7 +881,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_layout-utils.css</h3>
-					<p>Display utilities, turn on box-sizing: border-box (we don't do this at root like most), and everyone's favorite <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">clearfix hack</a>.</p>
+					<p class="px2">Display utilities, turn on box-sizing: border-box (we don't do this at root like most), and everyone's favorite <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">clearfix hack</a>.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -929,8 +929,8 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_layout-flex.css</h3>
-					<p>Use that flex object, kid! we do scope display: flex to media querie so you can turn it on at various screen widths as needed.</p>
-					<p>Be sure to check if the browsers your project needs to support has <a href="http://caniuse.com/#search=flex" target="_blank">flexbox support</a>.</p>
+					<p class="px2">Use that flex object, kid! we do scope display: flex to media querie so you can turn it on at various screen widths as needed.</p>
+					<p class="px2">Be sure to check if the browsers your project needs to support has <a href="http://caniuse.com/#search=flex" target="_blank">flexbox support</a>.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -991,7 +991,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_layout-hides.css</h3>
-					<p>Hide elements on the page as appropriate.</p>
+					<p class="px2">Hide elements on the page as appropriate.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -1043,7 +1043,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_grid.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -1099,7 +1099,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_grid-xs.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -1150,7 +1150,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_grid-sm.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -1201,7 +1201,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_grid-md.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center">
@@ -1252,7 +1252,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_grid-lg.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -1305,7 +1305,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/_transitions.css</h3>
-					<p>Attach the transistion class to the unchanged element to set the type of and speed of transistion to the changed state.</p>
+					<p class="px2">Attach the transistion class to the unchanged element to set the type of and speed of transistion to the changed state.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
@@ -1328,7 +1328,7 @@ a:hover{ color: var(--link-hover-color); }</code>
 			<div class="clearfix flex flex-center">
 				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
 					<h3 class="type-center">src/site.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
 				</div>
 			</div>
 			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
