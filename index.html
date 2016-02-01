@@ -19,11 +19,11 @@
 				<p>delightfully simple scalable css</p>
 			</header>
 			<h2 id="start" class="mt2-sm mb2-sm type-center">Getting Started</h2>
-			<p class="h3">Project intro here. Lorem ipsum Commodo velit minim fugiat anim Duis id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+			<p class="h3">Object oriented CSS here to help you and your team write better and easier to maintain CSS by writing less of it. jFrame is a library of single purpose CSS classes focused on extensibility, flexibility, and reuseability. Don't get lost in the cascase, make better sense of it.</p>
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">index.html</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p>Dafault html page template. Hopefully nothing too ground breaking here.</p>
 					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -44,7 +44,7 @@
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/jFrame.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p>jFrame's main import file grabs all of our partials and concatenates them. Use them all or take out what you don't need, dealers choice.</p>
 					<pre><code class="language-css">/* jFrame Styles */
 @import 'colors.css/myth/variables.css';
 @import '_variables';
@@ -85,7 +85,8 @@
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_variables.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p>Flexiable and unopinionated by default. Don't like the included type scale? Go on and make it your own.</p>
+					<p>Variable names are also kept close to their intended use so you can spend less time looking up variables and more time doing what you love most.</p>
 					<pre><code class="language-css">:root {
   /* Type */
   --font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -153,7 +154,8 @@
 			<section class="py2 mxn2-sm clearfix flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_media-queries.css</h3>
-					<p>File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+					<p>All media queries are written mobile first. Don't be shy about adjusting these (or adding more) to match your content, not the other way around.</p>
+					<p>The <a href="https://github.com/postcss/gulp-postcss" target="_blank">Gulp-PostCSS</a> build process will collect and order all queries so you just put them where ever makes sense to you. If a computer can do it why should we?</p>
 					<pre><code class="language-css">@custom-media --screen-xs (min-width: 30em);
 @custom-media --screen-sm (min-width: 60em);
 @custom-media --screen-md (min-width: 90em);
@@ -164,7 +166,8 @@
 			<section class="py2 mxn2-sm clearfix border-bottom border--navy flex flex-center">
 				<div class="col col-7 px2-sm mx-auto">
 					<h3 class="type-center">src/_reset.css</h3>
-					<p>The simple reset from <a href="http://basscss.com"target="_blank">Basscss</a>. For much deeper cross browser consistency include <a href="#" target="_blank">Normalize.css</a>.</p>
+					<p>The base reset from <a href="http://www.basscss.com/docs/base-reset/"target="_blank">Basscss</a>. To normalize styles for cross browser differences you'll have to install <a href="#" target="_blank">Normalize.css</a> and add the appropriate <code>@import</code> in src/jFrame.css.</p>
+					<p><kbd>$ npm install normalize.css</kbd></p>
 					<pre><code class="language-css">body { margin: 0; }
 img { width: 100%; }
 svg { max-height: 100%; }</code></pre>
