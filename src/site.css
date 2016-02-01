@@ -1,14 +1,5 @@
 /* Project unique styles here */
 
-:root{
-	--light-blue: #279aff;
-}
-
-
-
-pre{ background-color: var(--light-blue) }
-.bg-light-blue{ background-color: var(--light-blue) }
-
 @media(--screen-sm){
 	.main{ 
 		margin-left: 12rem; 
@@ -31,7 +22,7 @@ h1 .small{
 .nav a{ text-decoration: none }
 .nav a:hover{ background-color: #fff }
 
-.twitter{ 
-	bottom: 0; 
-	left: calc(4/12 * 100%); 
+.social iframe{
+	margin-left: calc( var(--space-1) / 2 );
+	margin-right: calc( var(--space-1) / 2 );
 }
