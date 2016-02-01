@@ -1,19 +1,22 @@
-.hide{ display: none; }
+.show-xs, 
+.show-sm, 
+.show-md, 
+.show-lg{ display: none; }
 
 @media (--screen-xs){
-	.hide-xs{ display: none; }
+	.show-xs{ display: block; }
 }
 
 @media (--screen-sm){
-	.hide-sm{ display: none; }
+	.show-sm{ display: block; }
 }
 
 @media (--screen-md){
-	.hide-md{ display: none; }
+	.show-md{ display: block; }
 }
 
 @media (--screen-lg){
-	.hide-lg{ display: none; }
+	.slow-lg{ display: block; }
 }
 
 /* Use this class for hiding things to be read for screen readers */
