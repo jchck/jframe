@@ -22,6 +22,8 @@ h1 .small{
 .nav a{ text-decoration: none }
 .nav a:hover{ background-color: #fff }
 
+header img{ width: initial }
+
 .social iframe{
 	margin-left: calc( var(--space-1) / 2 );
 	margin-right: calc( var(--space-1) / 2 );
