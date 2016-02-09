@@ -23,6 +23,7 @@
 			</header>
 			<h2 id="start" class="mt2-sm mb2-sm type-center">Getting Started</h2>
 			<p class="h3">jFrame is an object oriented CSS toolkit designed to help you and your team write better and easier to maintain CSS by writing less of it. This is a library of single purpose CSS classes focused on extensibility, flexibility, and reuseability. Don't get lost in the cascase, make better sense of it.</p>
+			<p class="h4 type-center"><a href="#installation">Find the installation guide here</a></p>
 			<p>Note: This project is still very much in constant development, if you find any bugs (as you likely will) please submit a <a href="https://github.com/jchck/jframe" target="_blank"> pull request</a>.</p>
 			<section class="py2 mxn2-sm clearfix flex flex-middle">
 				<div class="col col-10 col-7-sm px2-sm">
@@ -1391,6 +1392,71 @@ h1 .small{
 				</div>
 			</section>
 
+<h2 id="site" class="mt2-sm mb2-sm type-center">Installation</h2>
+			<p class="h3">Directions on how to instlal jFrame to your project here</p>
+			<div class="clearfix flex flex-center">
+				<div class="col col-10-xs col-7-sm px2-sm mx-auto">
+					<h3 class="type-center">src/site.css</h3>
+					<p class="px2">File description. Lorem ipsum Commodo velit minim fugiat id ex ullamco in qui exercitation mollit sint et minim sit officia sed sint occaecat et.</p>
+				</div>
+			</div>
+			<section class="py2 clearfix flex-sm flex-column flex-center border-bottom border--navy">
+				<div class="col col-10 col-6-sm px2">
+					<h3 class="type-center">.css</h3>
+					<pre>
+<code class="language-css">:root{
+	--light-blue: #279aff;
+}
+
+pre{ background-color: var(--light-blue) }
+.bg-light-blue{ background-color: var(--light-blue) }
+
+@media(--screen-sm){
+	.main{ 
+		margin-left: 12rem; 
+	}
+	.nav{ 
+		position: fixed; 
+		width: 12rem; 
+		overflow: auto; 
+		top: 0; 
+		bottom: 0; 
+		left: 0;
+	}
+}
+
+h1 .small{ 
+	font-size: 40%; 
+	color: var(--gray);
+}
+
+.nav a{ text-decoration: none }
+.nav a:hover{ background-color: #fff }
+
+.twitter{ 
+	bottom: 0; 
+	left: calc(4/12 * 100%); 
+}</code></pre>
+				</div>
+				<div class="col col-10 col-6-sm px2">
+					<h3 class="type-center">&lt;html&gt;</h3>
+					<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charet="utf8"&gt;
+	&lt;title&gt;jframe&lt;/title&gt;
+	&lt;meta title="description" content="delightfully simple scalable css"&gt;
+	&lt;meta title="author" content="Justin Chick"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;link rel="stylesheet" href="dest/jFrame.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- your code goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				</div>
+			</section>			
+
 			<footer class="py4 clearfix type-center gray">
 				<p class="m0">v0.0.2 | <a style="text-decoration:none" class="gray" href="https://github.com/jchck/jframe" target="_blank">Github</a></p>
 				<p class="m0"><a style="text-decoration:none" class="gray" href="http://jstn.ch/ck" target="_blank" title="Justin Chick is a freelance front-end developer.">Made with love by Justin Chick</a></p>
@@ -1407,6 +1473,7 @@ h1 .small{
 				<li><a class="col col-12-sm col-6 p2 ease" href="#grid">Grid</a></li>
 				<li><a class="col col-12-sm col-6 p2 ease" href="#transitions">Transitions</a></li>
 				<li><a class="col col-12-sm col-6 p2 ease" href="#site">Unique Site Styles</a></li>
+				<li><a class="col col-12-sm col-6 p2 ease" href="#installation">Installation</a></li>
 			</ul>
 				<div class="social flex flex-middle flex-end mt2 mb2 m0-sm" style="height: 40%">
 				<!-- Place this tag where you want the button to render. -->
