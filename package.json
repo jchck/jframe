@@ -4,6 +4,7 @@
   "description": "A css framework",
   "main": "index.js",
   "scripts": {
+    "html": "eleventy",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "keywords": [
