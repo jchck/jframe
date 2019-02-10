@@ -1,6 +1,9 @@
-module.exports = {
-  dir: {
-    input: '',
-    output: ''
+module.exports = function (eleventy) {
+  return {
+    dir: {
+      inpit: 'src/views',
+      output: 'dist'
+    },
+    passthroughFileCopy: true
   }
 };
