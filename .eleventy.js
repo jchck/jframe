@@ -3,7 +3,7 @@ module.exports = function (eleventy) {
   eleventy.addLayoutAlias( 'default', 'layouts/default.liquid' );
   return {
     dir: {
-      inpit: 'src/views',
+      input: 'src/views',
       includes: '_includes',
       output: 'dist',
       passthroughFileCopy: true
