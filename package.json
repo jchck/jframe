@@ -4,6 +4,7 @@
   "description": "A css framework",
   "main": "index.js",
   "scripts": {
+    "css": "postcss src/css/jFrame.css --output dist/jframe.css",
     "html": "eleventy",
     "debug": "DEBUG=Eleventy* eleventy"
   },
