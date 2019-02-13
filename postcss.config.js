@@ -13,7 +13,7 @@ module.exports = {
       // dir to copy assets
       assetsPath: 'img',
       useHash: true
-    })
+    }),
     presetEnv({
       stage: 1, // 0 (experimental) to 4 (stable)
     }),
