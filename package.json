@@ -16,7 +16,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
     "browser-sync": "^2.26.3",
-    "postcss-cli": "^6.1.1"
+    "postcss-cli": "^6.1.1",
+    "postcss-preset-env": "^6.5.0"
   },
   "dependencies": {
     "colors.css": "^2.3.0",
