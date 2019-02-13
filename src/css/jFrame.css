@@ -1,5 +1,11 @@
 /* jFrame Styles */
-@import 'colors.css/myth/variables.css';
+
+.class {
+  backgound-color: #000;
+  display: flex;
+}
+
+/* @import 'colors.css/myth/variables.css';
 @import '_variables';
 
 @import '_media-queries';
@@ -26,8 +32,8 @@
 @import '_grid-md';
 @import '_grid-lg';
 
-@import '_transitions';
+@import '_transitions'; */
 
 /* Site Specific Styles */
-@import 'prism.css';
-@import 'site.css'
+/* @import 'prism.css';
+@import 'site.css' */
