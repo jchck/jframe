@@ -10,7 +10,13 @@ bs.watch('./src/views/**/*', (event, file) => {
   if(event=='change') {
     require('@11ty/eleventy/cmd');
     bs.reload();
-  };
+  }
+});
+
+bs.watch('./src/css/**/*', (event, file) => {
+  if(event=='change') {
+    bs.reload();
+  }
 });
 
 /**
