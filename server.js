@@ -1,14 +1,11 @@
 const pkg = require('./package.json');
 const bs = require('browser-sync').create(pkg.name);
 
-// bs.watch('./src/views/**/*').on('change', bs.reload);
-// bs.watch('./src/views/**/*', function(event, file) {
-//   if ( event == 'change' ) {
-//     bs.reload();
-//   }
-// });
 bs.watch('./src/views/**/*', (event, file) => {
-  event == 'change' ? bs.reload() : '';
+  if(event=='change') {
+    require('@11ty/eleventy/cmd');
+    bs.reload();
+  };
 });
 
 bs.init({

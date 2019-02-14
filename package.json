@@ -7,7 +7,8 @@
     "css": "postcss src/css/jFrame.css --output dist/jframe.css",
     "html": "eleventy",
     "server": "node server.js",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "DEBUG=Eleventy* eleventy",
+    "test": "node test.js"
   },
   "keywords": [
     "css",
