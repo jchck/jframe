@@ -1,4 +1,5 @@
 /* jFrame Styles */
+
 @import 'colors.css/myth/variables.css';
 @import '_variables';
 
@@ -30,4 +31,4 @@
 
 /* Site Specific Styles */
 @import 'prism.css';
-@import 'site.css'
+@import 'site.css';
